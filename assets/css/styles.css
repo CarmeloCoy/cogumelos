@@ -3634,3 +3634,21 @@ html[data-theme="dark"] .person-card:hover .profile-open-hint{
   }
   .profile-modal-content{padding:28px 20px 32px}
 }
+
+/* Connected worked-example page */
+.delivery-case-link-row{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:16px;
+}
+.delivery-case-link-row .button{
+  gap:8px;
+}
+.delivery-case-link-row .ui-icon{
+  width:18px;
+  height:18px;
+}
+@media(max-width:700px){
+  .delivery-case-link-row{justify-content:stretch}
+  .delivery-case-link-row .button{width:100%}
+}

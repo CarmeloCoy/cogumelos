@@ -51,3 +51,17 @@ The home now presents three problem-led engagements:
 3. Product Rescue & Modernisation
 
 Temporary team integration and advisory support are described separately as collaboration formats, rather than as a fourth service. Spanish and Portuguese copy has been rewritten for natural local usage rather than translated literally.
+
+
+## Latest case-study refinement
+
+`how-we-work.html` now includes an explicit scope-decision section showing what
+was deliberately left outside the current phase:
+
+- Final studio brand and name.
+- Custom domain and branded email.
+- Full brand rollout and broader launch assets.
+- Additional public proof that cannot yet be shown without permission.
+
+The section is available in English, Spanish and Portuguese and frames these
+items as conscious prioritisation rather than unfinished work.

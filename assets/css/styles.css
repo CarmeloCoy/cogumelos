@@ -3652,3 +3652,106 @@ html[data-theme="dark"] .person-card:hover .profile-open-hint{
   .delivery-case-link-row{justify-content:stretch}
   .delivery-case-link-row .button{width:100%}
 }
+
+
+/* ----------------------------------------------------------
+   Engagement model clarification
+   The three tabs describe market needs. This block explains
+   how the studio can join a client's team without turning the
+   collaboration format into a fourth service.
+   ---------------------------------------------------------- */
+.engagement-format{
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr) minmax(240px,.52fr);
+  gap:20px;
+  align-items:start;
+  margin-top:14px;
+  padding:24px;
+  border:1px solid var(--outline-variant);
+  border-radius:var(--radius-lg);
+  background:
+    linear-gradient(
+      115deg,
+      color-mix(in srgb,var(--primary-container) 46%,var(--surface-container-lowest)),
+      var(--surface-container-lowest) 52%,
+      color-mix(in srgb,var(--secondary-container) 34%,var(--surface-container-lowest))
+    );
+}
+.engagement-format-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  color:#fff;
+  background:var(--brand-gradient);
+}
+.engagement-format-icon .ui-icon{width:22px;height:22px}
+.engagement-format-kicker{
+  margin:0 0 7px;
+  color:var(--primary);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.engagement-format-copy h3{
+  margin:0;
+  color:var(--on-surface);
+  font-size:20px;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+.engagement-format-copy>p:last-child{
+  max-width:760px;
+  margin:9px 0 0;
+  color:var(--on-surface-variant);
+  font-size:14px;
+  line-height:1.55;
+}
+.engagement-format-options{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:7px;
+}
+.engagement-format-options span{
+  display:inline-flex;
+  min-height:32px;
+  align-items:center;
+  padding:5px 11px;
+  border:1px solid var(--outline-variant);
+  border-radius:999px;
+  color:var(--on-surface-variant);
+  background:var(--surface-container-lowest);
+  font-size:12px;
+  font-weight:600;
+}
+html[data-theme="dark"] .engagement-format{
+  background:
+    linear-gradient(
+      115deg,
+      color-mix(in srgb,var(--primary-container) 56%,var(--surface-container-lowest)),
+      var(--surface-container-lowest) 52%,
+      color-mix(in srgb,var(--secondary-container) 48%,var(--surface-container-lowest))
+    );
+}
+html[data-theme="dark"] .engagement-format-options span{
+  background:var(--surface-container-low);
+}
+@media(max-width:900px){
+  .engagement-format{
+    grid-template-columns:48px minmax(0,1fr);
+  }
+  .engagement-format-options{
+    grid-column:2;
+    justify-content:flex-start;
+  }
+}
+@media(max-width:700px){
+  .engagement-format{
+    grid-template-columns:1fr;
+    padding:20px;
+  }
+  .engagement-format-options{grid-column:auto}
+}

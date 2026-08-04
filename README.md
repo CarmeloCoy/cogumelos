@@ -40,3 +40,14 @@ The language preference is shared between `index.html` and
 
 After the final domain is known, add absolute `canonical`, `og:url` and
 absolute `og:image` values to both HTML pages.
+
+
+## Service model refinement
+
+The home now presents three problem-led engagements:
+
+1. Product Definition Sprint
+2. Product Foundation
+3. Product Rescue & Modernisation
+
+Temporary team integration and advisory support are described separately as collaboration formats, rather than as a fourth service. Spanish and Portuguese copy has been rewritten for natural local usage rather than translated literally.

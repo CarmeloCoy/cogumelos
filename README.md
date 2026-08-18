@@ -69,6 +69,14 @@ source values in the structured locale files. New Spanish and Portuguese
 entries use the English source as a fallback; existing translations are
 preserved.
 
+Add `data-i18n-ignore` to an element whose text or supported translation
+attributes should remain out of the extraction inventory and locale files.
+
+Run `npm run clean:translations` to remove stale entries from the
+template-derived translation maps after deleting or changing template copy. It
+does not alter structured locale content such as service, profile, or metadata
+translations.
+
 ## Navigation
 
 - The home navigation and delivery section link to `how-we-work.html`.

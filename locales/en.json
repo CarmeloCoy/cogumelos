@@ -1,14 +1,8 @@
 {
   "home": {
     "staticTranslations": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
       "Carolina & Carmelo — Product & Engineering Studio": "Carolina & Carmelo — Product & Engineering Studio",
       "Skip to content": "Skip to content",
-      "C²": "C²",
       "Carolina & Carmelo": "Carolina & Carmelo",
       "Product & Engineering Studio": "Product & Engineering Studio",
       "What we solve": "What we solve",
@@ -74,13 +68,10 @@
       "Ways to work together": "Ways to work together",
       "Three focused product engagements.": "Three focused product engagements.",
       "Each engagement answers a different product moment: decide what is worth building, turn a validated direction into a dependable product, or improve a product that has become difficult to use and evolve.": "Each engagement answers a different product moment: decide what is worth building, turn a validated direction into a dependable product, or improve a product that has become difficult to use and evolve.",
-      "01": "01",
       "Definition Sprint": "Definition Sprint",
       "Clarify what is worth building": "Clarify what is worth building",
-      "02": "02",
       "Product Foundation": "Product Foundation",
       "Turn direction into a real product": "Turn direction into a real product",
-      "03": "03",
       "Rescue & Modernisation": "Rescue & Modernisation",
       "Make an existing product move again": "Make an existing product move again",
       "01 · Product Definition Sprint": "01 · Product Definition Sprint",
@@ -127,8 +118,7 @@
       "Share the current situation, the decision you need to make and where the team is blocked. We will start with the questions that matter most.": "Share the current situation, the decision you need to make and where the team is blocked. We will start with the questions that matter most.",
       "Email the studio": "Email the studio",
       "Product & Engineering Studio · Madrid, Spain": "Product & Engineering Studio · Madrid, Spain",
-      "Contact": "Contact",
-      "©": "©"
+      "Contact": "Contact"
     },
     "serviceContent": {
       "definition": {
@@ -531,7 +521,6 @@
       "languages": "Languages",
       "theme": "Switch colour theme",
       "openNav": "Open navigation",
-      "closeNav": "Close navigation",
       "workingLanguages": "Working languages",
       "methodOverview": "Method overview"
     },

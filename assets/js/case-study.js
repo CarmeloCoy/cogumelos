@@ -1,8 +1,6 @@
 (() => {
   "use strict";
 
-  const localeData = window.STUDIO_LOCALE.caseStudy;
-  const {ariaTranslations} = localeData;
   const languageNames = {en:"English", es:"Español", pt:"Português"};
 
   const readStorage = key => {
@@ -56,7 +54,7 @@
     });
 
     if (menuToggle && !navLinks?.classList.contains("open")) {
-      menuToggle.setAttribute("aria-label", ariaTranslations.openNav);
+      menuToggle.setAttribute("aria-label", menuToggle.dataset.openLabel);
     }
   }
 
@@ -78,7 +76,7 @@
   menuToggle?.addEventListener("click", () => {
     const open = navLinks?.classList.toggle("open") || false;
     menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute("aria-label", ariaTranslations[open ? "closeNav" : "openNav"]);
+    menuToggle.setAttribute("aria-label", open ? menuToggle.dataset.closeLabel : menuToggle.dataset.openLabel);
     menuToggle.querySelector("use")?.setAttribute("href", open ? "#icon-close" : "#icon-menu");
   });
 
@@ -86,7 +84,7 @@
     link.addEventListener("click", () => {
       navLinks.classList.remove("open");
       menuToggle?.setAttribute("aria-expanded","false");
-      menuToggle?.setAttribute("aria-label",ariaTranslations.openNav);
+      menuToggle?.setAttribute("aria-label",menuToggle.dataset.openLabel);
       menuToggle?.querySelector("use")?.setAttribute("href","#icon-menu");
     });
   });

@@ -6,7 +6,7 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
 const output = path.join(root, "dist");
-const languages = ["en", "es", "pt"];
+const languages = ["es", "pt"];
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -20,7 +20,12 @@ function render(template, values) {
 }
 
 function escapeHtml(value) {
-  return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function decodeHtml(value) {
@@ -65,19 +70,33 @@ function replaceMailSubjects(html, subject) {
   return html.replace(/subject=[^"'\s>]+/g, `subject=${encodeURIComponent(subject)}`);
 }
 
-function mapEnglishValues(english, translated) {
-  return Object.fromEntries(Object.entries(translated).map(([key, value]) => [english[key], value]));
+function extractKeyedText(html) {
+  const values = {};
+  const pattern = /<([\w:-]+)\b([^>]*)\bdata-i18n=(['"])([^'"]+)\3[^>]*>([\s\S]*?)<\/\1\s*>/gi;
+  let match;
+
+  while ((match = pattern.exec(html))) {
+    const value = decodeHtml(match[5].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim());
+    if (value) values[match[4]] = value;
+  }
+  return values;
 }
 
-function mapNestedStrings(english, translated, result = {}) {
-  if (typeof english === "string" && typeof translated === "string") {
-    result[english] = translated;
-  } else if (Array.isArray(english) && Array.isArray(translated)) {
-    english.forEach((value, index) => mapNestedStrings(value, translated[index], result));
-  } else if (english && translated && typeof english === "object" && typeof translated === "object") {
-    for (const key of Object.keys(english)) mapNestedStrings(english[key], translated[key], result);
-  }
-  return result;
+function extractKeyedAttributes(html, key, attribute) {
+  const values = {};
+  const keyAttribute = `data-i18n-${key}`;
+  const pattern = new RegExp(`<[\\w:-]+\\b(?=[^>]*\\b${keyAttribute}=(['"])([^'"]+)\\1)(?=[^>]*\\b${attribute}=(['"])(.*?)\\3)[^>]*>`, "gi");
+  let match;
+
+  while ((match = pattern.exec(html))) values[match[2]] = decodeHtml(match[4]);
+  return values;
+}
+
+function mapTemplateValues(source, translations) {
+  return Object.fromEntries(Object.entries(translations).map(([key, value]) => {
+    if (!(key in source)) throw new Error(`Missing template source for translation key: ${key}`);
+    return [source[key], value];
+  }));
 }
 
 function rewriteAssetPaths(html, prefix) {
@@ -88,10 +107,10 @@ const locales = Object.fromEntries(
   languages.map(language => [language, readJson(path.join(root, "locales", `${language}.json`))])
 );
 for (const language of languages) {
-  for (const key of ["staticTranslations", "serviceContent", "metaContent", "attributeTranslations", "profileContent", "profileUi"]) {
+  for (const key of ["staticTranslations", "metaContent", "attributeTranslations", "menuLabels"]) {
     if (locales[language].home[key] === undefined) throw new Error(`Missing home.${key} in locales/${language}.json`);
   }
-  for (const key of ["translations", "ariaTranslations", "altTranslations", "metaTranslations"]) {
+  for (const key of ["translations", "ariaTranslations", "altTranslations", "metaTranslations", "menuLabels"]) {
     if (locales[language].caseStudy[key] === undefined) throw new Error(`Missing caseStudy.${key} in locales/${language}.json`);
   }
 }
@@ -103,40 +122,44 @@ fs.cpSync(path.join(root, "assets"), path.join(output, "assets"), {recursive: tr
 for (const page of ["index.html", "how-we-work.html"]) {
   const template = fs.readFileSync(path.join(root, page), "utf8");
   const isHome = page === "index.html";
+  const defaultHtml = rewriteAssetPaths(
+    render(template, {
+      menuOpenLabel: "Open navigation",
+      menuCloseLabel: "Close navigation"
+    }),
+    ""
+  );
+  fs.writeFileSync(path.join(output, page), defaultHtml);
+  const caseStudyText = isHome ? null : extractKeyedText(template);
+  const caseStudyAria = isHome ? null : extractKeyedAttributes(template, "aria", "aria-label");
+  const caseStudyAlt = isHome ? null : extractKeyedAttributes(template, "alt", "alt");
 
   for (const language of languages) {
     const locale = locales[language];
     const text = isHome
-      ? {
-          ...locale.home.staticTranslations,
-           ...mapNestedStrings(locales.en.home.serviceContent, locale.home.serviceContent),
-           ...mapNestedStrings(locales.en.home.profileContent, locale.home.profileContent)
-        }
-      : mapEnglishValues(locales.en.caseStudy.translations, locale.caseStudy.translations);
+      ? locale.home.staticTranslations
+      : mapTemplateValues(caseStudyText, locale.caseStudy.translations);
     const attributes = isHome
-      ? {
-          ...locale.home.attributeTranslations,
-          "Open Carolina Vasconcelos full profile": locale.home.profileUi.carolina_aria,
-          "Open Carmelo Alcaraz Coy full profile": locale.home.profileUi.carmelo_aria,
-          "Close profile": locale.home.profileContent.carolina.close
-        }
+      ? locale.home.attributeTranslations
       : {
-          ...mapEnglishValues(locales.en.caseStudy.ariaTranslations, locale.caseStudy.ariaTranslations),
-          ...mapEnglishValues(locales.en.caseStudy.altTranslations, locale.caseStudy.altTranslations)
+          ...mapTemplateValues(caseStudyAria, locale.caseStudy.ariaTranslations),
+          ...mapTemplateValues(caseStudyAlt, locale.caseStudy.altTranslations)
         };
     const metadata = isHome ? locale.home.metaContent : locale.caseStudy.metaTranslations;
-    const localeData = isHome
-      ? {home: {
-          serviceContent: locale.home.serviceContent,
-          attributeTranslations: locale.home.attributeTranslations,
-          profileContent: locale.home.profileContent,
-          profileUi: locale.home.profileUi
-        }}
-      : {caseStudy: {ariaTranslations: locale.caseStudy.ariaTranslations}};
+    const menuLabels = isHome
+      ? {
+          open: locale.home.menuLabels.open,
+          close: locale.home.menuLabels.close
+        }
+      : {
+          open: locale.caseStudy.menuLabels.open,
+          close: locale.caseStudy.menuLabels.close
+        };
     const localizedHtml = replaceMetadata(
       localiseAttributes(
         localiseText(render(template, {
-          localeScript: `<script>window.STUDIO_LOCALE = ${JSON.stringify(localeData)};</script>`
+          menuOpenLabel: escapeHtml(menuLabels.open),
+          menuCloseLabel: escapeHtml(menuLabels.close)
         }), text),
         attributes
       ),
@@ -147,11 +170,9 @@ for (const page of ["index.html", "how-we-work.html"]) {
       : localizedHtml;
     const compiled = rewriteAssetPaths(
       withMailSubjects.replace(/<html\b([^>]*)\blang="[^"]*"/, `<html$1lang="${language}"`),
-      language === "en" ? "" : "../"
+      "../"
     );
-    const destination = language === "en"
-      ? path.join(output, page)
-      : path.join(output, language, page);
+    const destination = path.join(output, language, page);
     fs.mkdirSync(path.dirname(destination), {recursive: true});
     fs.writeFileSync(destination, compiled);
   }

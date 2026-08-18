@@ -24,9 +24,6 @@
     const detailPanel = document.getElementById("engagementDetail");
     const tabButtons = [...document.querySelectorAll(".tab-button")];
 
-    const localeData = window.STUDIO_LOCALE.home;
-    const {attributeTranslations, profileUi} = localeData;
-
     const profileDialog = document.getElementById("profileDialog");
     const profileDialogClose = document.getElementById("profileDialogClose");
     const profileCards = [...document.querySelectorAll(".person-card[data-profile]")];
@@ -58,13 +55,7 @@
       const isOpen = navLinks.classList.toggle("open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
       menuToggle.querySelector("use").setAttribute("href", isOpen ? "#icon-close" : "#icon-menu");
-      const key = isOpen ? "Close navigation" : "Open navigation";
-      menuToggle.setAttribute(
-        "aria-label",
-        currentLanguage === "en"
-          ? key
-          : (attributeTranslations[key] || key)
-      );
+      menuToggle.setAttribute("aria-label", isOpen ? menuToggle.dataset.closeLabel : menuToggle.dataset.openLabel);
     });
 
     navLinks.querySelectorAll("a").forEach(link => {
@@ -91,17 +82,6 @@
       detailPanel.querySelectorAll("[data-service-detail]").forEach(view => {
         view.hidden = view.dataset.serviceDetail !== key;
       });
-    }
-
-    function updateProfileCardLabels() {
-      const labels = profileUi;
-      document.querySelectorAll(".profile-open-label").forEach(label => {
-        label.textContent = labels.open;
-      });
-      const carolinaCard = document.querySelector('[data-profile="carolina"]');
-      const carmeloCard = document.querySelector('[data-profile="carmelo"]');
-      if (carolinaCard) carolinaCard.setAttribute("aria-label", labels.carolina_aria);
-      if (carmeloCard) carmeloCard.setAttribute("aria-label", labels.carmelo_aria);
     }
 
     function openProfileDialog(key, sourceElement) {
@@ -156,7 +136,6 @@
       });
 
       displayService(currentService);
-      updateProfileCardLabels();
     }
 
     function setLanguageMenu(open) {

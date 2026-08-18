@@ -44,7 +44,6 @@
     <script>
       document.documentElement.classList.replace("no-js", "js");
     </script>
-    {{localeScript}}
     <script defer="" src="assets/js/case-study.js"></script>
   </head>
   <body class="studio-premium case-page">
@@ -612,6 +611,8 @@
             aria-label="Open navigation"
             class="menu-button"
             data-i18n-aria="openNav"
+            data-close-label="{{menuCloseLabel}}"
+            data-open-label="{{menuOpenLabel}}"
             id="menuToggle"
             type="button"
           >

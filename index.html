@@ -503,7 +503,7 @@
     <header class="top-app-bar" id="top">
       <nav aria-label="Main navigation" class="app-bar-inner container">
         <a aria-label="Carolina and Carmelo home" class="brand" href="#top">
-          <span class="brand-mark"  data-i18n-ignore>C²</span>
+          <span class="brand-mark" data-i18n-ignore>C²</span>
           <span class="brand-copy">
             <strong data-i18n-ignore>Carolina &amp; Carmelo</strong>
             <span>Product &amp; Engineering Studio</span>
@@ -969,42 +969,125 @@
               role="tabpanel"
               tabindex="0"
             >
-              <!-- Filled by JavaScript, with a complete initial state below for no-JS visibility. -->
-              <div class="detail-copy">
-                <p class="detail-kicker">01 · Product Definition Sprint</p>
-                <h3>
-                  Turn an ambiguous opportunity into a product direction your
-                  team can commit to.
-                </h3>
-                <p>
-                  We connect the business problem, priority users, workflows and
-                  technical constraints before design and engineering effort
-                  becomes expensive.
-                </p>
-                <div class="deliverables">
-                  <span class="deliverable">Problem framing</span
-                  ><span class="deliverable">Priority users</span
-                  ><span class="deliverable">Core workflows</span
-                  ><span class="deliverable">Prototype</span
-                  ><span class="deliverable">MVP scope</span
-                  ><span class="deliverable">Architecture outline</span>
-                </div>
-              </div>
-              <aside class="detail-aside">
-                <svg aria-hidden="true" class="ui-icon">
-                  <use href="#icon-travel_explore"></use>
-                </svg>
-                <div>
-                  <strong
-                    >Best when the opportunity is real, but the team is not yet
-                    aligned on what to build.</strong
-                  >
+              <div data-service-detail="definition">
+                <div class="detail-copy">
+                  <p class="detail-kicker">01 · Product Definition Sprint</p>
+                  <h3>
+                    Turn an ambiguous opportunity into a product direction your
+                    team can commit to.
+                  </h3>
                   <p>
-                    Useful before an MVP, major feature, redesign or technical
-                    commitment.
+                    We connect the business problem, priority users, workflows
+                    and technical constraints before design and engineering
+                    effort becomes expensive.
                   </p>
+                  <div class="deliverables">
+                    <span class="deliverable">Problem framing</span
+                    ><span class="deliverable">Priority users</span
+                    ><span class="deliverable">Core workflows</span
+                    ><span class="deliverable">Prototype</span
+                    ><span class="deliverable">MVP scope</span
+                    ><span class="deliverable">Architecture outline</span>
+                  </div>
                 </div>
-              </aside>
+                <aside class="detail-aside">
+                  <svg aria-hidden="true" class="ui-icon">
+                    <use href="#icon-travel_explore"></use>
+                  </svg>
+                  <div>
+                    <strong
+                      >Best when the opportunity is real, but the team is not
+                      yet aligned on what to build.</strong
+                    >
+                    <p>
+                      Useful before an MVP, major feature, redesign or technical
+                      commitment.
+                    </p>
+                  </div>
+                </aside>
+              </div>
+              <div
+                data-service-detail="foundation"
+                hidden=""
+              >
+                <div class="detail-copy">
+                  <p class="detail-kicker">02 · Product Foundation</p>
+                  <h3>
+                    Turn a validated direction into a product foundation ready
+                    for real use.
+                  </h3>
+                  <p>
+                    We shape the experience and establish the frontend, backend,
+                    data and cloud foundations needed to launch, learn and
+                    continue building without starting over.
+                  </p>
+                  <div class="deliverables">
+                    <span class="deliverable">UX/UI</span
+                    ><span class="deliverable">Design system</span
+                    ><span class="deliverable">Frontend</span
+                    ><span class="deliverable">Backend services</span
+                    ><span class="deliverable">APIs &amp; data</span
+                    ><span class="deliverable">Cloud setup</span>
+                  </div>
+                </div>
+                <aside class="detail-aside">
+                  <svg aria-hidden="true" class="ui-icon">
+                    <use href="#icon-foundation"></use>
+                  </svg>
+                  <div>
+                    <strong
+                      >Best when the problem and initial scope are understood,
+                      but the product still needs to be designed and built as
+                      one coherent system.</strong
+                    >
+                    <p>
+                      Suitable for new B2B products, internal platforms and
+                      validated MVPs that need to mature.
+                    </p>
+                  </div>
+                </aside>
+              </div>
+              <div
+                data-service-detail="rescue"
+                hidden=""
+              >
+                <div class="detail-copy">
+                  <p class="detail-kicker">
+                    03 · Product Rescue &amp; Modernisation
+                  </p>
+                  <h3>
+                    Make an existing product easier to use, change and operate.
+                  </h3>
+                  <p>
+                    We identify where product complexity, UX debt and technical
+                    constraints are blocking progress, then define and deliver a
+                    realistic modernisation path.
+                  </p>
+                  <div class="deliverables">
+                    <span class="deliverable">Product &amp; UX audit</span
+                    ><span class="deliverable">Technical assessment</span
+                    ><span class="deliverable">Priority map</span
+                    ><span class="deliverable">Workflow redesign</span
+                    ><span class="deliverable">Modernisation plan</span
+                    ><span class="deliverable">Target foundations</span>
+                  </div>
+                </div>
+                <aside class="detail-aside">
+                  <svg aria-hidden="true" class="ui-icon">
+                    <use href="#icon-sync_alt"></use>
+                  </svg>
+                  <div>
+                    <strong
+                      >Best when the product works, but users struggle and every
+                      change takes the team longer than it should.</strong
+                    >
+                    <p>
+                      Suitable for legacy systems, growing SaaS products and
+                      operational tools.
+                    </p>
+                  </div>
+                </aside>
+              </div>
             </div>
           </div>
           <div class="engagement-format reveal">
@@ -1177,7 +1260,7 @@
           <a href="how-we-work.html">How we work</a>
           <a href="#contact">Contact</a>
         </div>
-        <div  data-i18n-ignore>© <span id="year"></span></div>
+        <div data-i18n-ignore>© <span id="year"></span></div>
       </div>
     </footer>
     <dialog
@@ -1197,7 +1280,394 @@
             <use href="#icon-close"></use>
           </svg>
         </button>
-        <div id="profileDialogContent"></div>
+        <div id="profileDialogContent">
+          <article
+            class="profile-modal-layout"
+            data-profile-detail="carolina"
+            hidden=""
+          >
+            <header class="profile-modal-hero">
+              <div class="profile-modal-hero-copy">
+                <span class="profile-modal-location"
+                  >Madrid · Product, UX and frontend</span
+                >
+                <h2 id="profileDialogTitle-carolina">Carolina Vasconcelos</h2>
+                <p class="profile-modal-role">Product &amp; Experience Lead</p>
+                <h3 class="profile-modal-headline">
+                  Bridges product direction, complex UX and engineering
+                  execution.
+                </h3>
+                <p class="profile-modal-intro">
+                  Carolina is a product-minded UX/UI and technical profile with
+                  experience across product ownership, complex B2B SaaS,
+                  operational products and frontend delivery.
+                </p>
+              </div>
+              <figure class="profile-modal-photo-card">
+                <img
+                  alt="Carolina Vasconcelos"
+                  class="profile-modal-photo"
+                  src="assets/images/carolina-vasconcelos.jpg"
+                  style="object-position: 50% 42%"
+                />
+              </figure>
+            </header>
+            <div class="profile-modal-content">
+              <div class="profile-modal-narrative">
+                <p>
+                  Her strongest contribution is turning ambiguous business
+                  priorities and user needs into focused scope, understandable
+                  journeys and buildable product increments. She can move from
+                  discovery and roadmap structure into information architecture,
+                  interaction models, user stories, acceptance criteria and
+                  release preparation without losing the reason the product is
+                  being built.
+                </p>
+                <p>
+                  Because she has led UX/UI and frontend modernisation in
+                  constraint-heavy environments, she designs with system states,
+                  edge cases, component logic, accessibility and implementation
+                  realities in view. This makes her especially valuable in
+                  products where dashboards, datasets, maps, filters, alerts and
+                  operational workflows must become clear without
+                  oversimplifying the system.
+                </p>
+              </div>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">
+                  Where Carolina creates value
+                </h4>
+                <div class="profile-value-grid">
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-explore"></use></svg
+                    ></span>
+                    <div>
+                      <h4>Product direction</h4>
+                      <p>
+                        Clarifies the problem, defines focused scope and
+                        connects roadmap priorities with user and business
+                        value.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-account_tree"></use></svg
+                    ></span>
+                    <div>
+                      <h4>Complex experience design</h4>
+                      <p>
+                        Structures data-heavy and operational workflows into
+                        coherent journeys, states and reusable interaction
+                        patterns.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-design_services"></use></svg
+                    ></span>
+                    <div>
+                      <h4>Design-to-delivery bridge</h4>
+                      <p>
+                        Carries decisions into Figma, component logic,
+                        acceptance criteria, frontend plans, QA and release
+                        preparation.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">Relevant experience</h4>
+                <div class="profile-evidence-list">
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong
+                        >Product Manager / Product Design Owner · Nommon</strong
+                      >
+                      <p>
+                        Owns discovery, roadmap structure, backlog quality and
+                        UX direction for a multi-product SaaS platform in
+                        mobility and data intelligence.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong
+                        >Senior Frontend Developer &amp; UX/UI Lead · Siemens
+                        Mobility</strong
+                      >
+                      <p>
+                        Led the UX/UI and frontend modernisation of a legacy
+                        operational product, balancing usability with
+                        architecture, integrations and delivery risk.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong>UX Advisor · PsyPilot</strong>
+                      <p>
+                        Supports early product decisions, service flows and
+                        information architecture for psychologists, clinic teams
+                        and patients.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">Core capabilities</h4>
+                <div class="profile-capability-list">
+                  <span class="profile-capability">Product discovery</span
+                  ><span class="profile-capability">Roadmaps &amp; backlog</span
+                  ><span class="profile-capability">UX/UI leadership</span
+                  ><span class="profile-capability"
+                    >Information architecture</span
+                  ><span class="profile-capability">Design systems</span
+                  ><span class="profile-capability">Complex SaaS workflows</span
+                  ><span class="profile-capability">Frontend delivery</span
+                  ><span class="profile-capability">Acceptance criteria</span
+                  ><span class="profile-capability">Stakeholder alignment</span>
+                </div>
+              </section>
+              <div class="profile-modal-actions">
+                <a
+                  class="button outlined small"
+                  href="https://www.linkedin.com/in/carolinavasconceloscastro/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >LinkedIn</a
+                ><a
+                  class="button outlined small"
+                  href="https://carolinavasconceloscastro.github.io/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Portfolio</a
+                ><a class="button tonal small" href="mailto:cavacaaz@gmail.com"
+                  >Email Carolina</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="profile-modal-layout"
+            data-profile-detail="carmelo"
+            hidden=""
+          >
+            <header class="profile-modal-hero engineering">
+              <div class="profile-modal-hero-copy">
+                <span class="profile-modal-location"
+                  >Madrid · Software, cloud and platform</span
+                >
+                <h2 id="profileDialogTitle-carmelo">Carmelo Alcaraz Coy</h2>
+                <p class="profile-modal-role">
+                  Engineering &amp; Platform Lead
+                </p>
+                <h3 class="profile-modal-headline">
+                  Turns product requirements into reliable systems and technical
+                  foundations.
+                </h3>
+                <p class="profile-modal-intro">
+                  Carmelo is a software and platform engineer with a dual
+                  academic background in Computer Engineering and Mathematics,
+                  and a career spanning development, architecture, cloud and
+                  infrastructure.
+                </p>
+              </div>
+              <figure class="profile-modal-photo-card">
+                <img
+                  alt="Carmelo Alcaraz Coy"
+                  class="profile-modal-photo"
+                  src="assets/images/carmelo-alcaraz.jpg"
+                  style="object-position: 50% 50%"
+                />
+              </figure>
+            </header>
+            <div class="profile-modal-content engineering">
+              <div class="profile-modal-narrative">
+                <p>
+                  His progression from software engineer to senior software
+                  engineer and platform engineer gives him a broad view of how
+                  applications are designed, operated and evolved. He can
+                  connect backend services, APIs, databases and web applications
+                  with the cloud and automation capabilities that development
+                  teams need to deliver consistently.
+                </p>
+                <p>
+                  His mathematical foundation adds structured analytical
+                  thinking to architecture and engineering decisions. He is
+                  particularly useful where a product needs more than
+                  implementation: explicit technical trade-offs, maintainable
+                  system design, infrastructure as code, platform capabilities
+                  and a foundation that can support long-term change.
+                </p>
+              </div>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">
+                  Where Carmelo creates value
+                </h4>
+                <div class="profile-value-grid">
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-schema"></use></svg
+                    ></span>
+                    <div>
+                      <h4>System architecture</h4>
+                      <p>
+                        Designs software structures, services, APIs and data
+                        foundations around product needs and technical
+                        constraints.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-cloud_sync"></use></svg
+                    ></span>
+                    <div>
+                      <h4>Cloud &amp; platform engineering</h4>
+                      <p>
+                        Connects AWS, Azure, Docker and cloud operations with
+                        the capabilities teams need to build and run software.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-value-card">
+                    <span class="profile-value-icon"
+                      ><svg aria-hidden="true" class="ui-icon">
+                        <use href="#icon-automation"></use></svg
+                    ></span>
+                    <div>
+                      <h4>Automation &amp; reliability</h4>
+                      <p>
+                        Uses Terraform, Ansible and Infrastructure as Code to
+                        reduce manual work and create repeatable technical
+                        foundations.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">Relevant experience</h4>
+                <div class="profile-evidence-list">
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong>Platform Engineer · Nommon</strong>
+                      <p>
+                        Designs and operates cloud-based platforms,
+                        infrastructure automation and internal engineering
+                        solutions that support software teams.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong>Senior Software Engineer · Nommon</strong>
+                      <p>
+                        Worked across software architecture, system design, web
+                        applications, data visualisation and technical
+                        leadership within project teams.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong>Software Engineer · Capgemini</strong>
+                      <p>
+                        Built and maintained enterprise software using
+                        established engineering methodologies, with experience
+                        in Java and C/C++.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="profile-evidence-item">
+                    <span
+                      aria-hidden="true"
+                      class="profile-evidence-dot"
+                    ></span>
+                    <div>
+                      <strong>Computer Engineering + Mathematics</strong>
+                      <p>
+                        Combines software engineering with optimisation,
+                        statistics, numerical methods, modelling and analytical
+                        problem solving.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <section class="profile-modal-section">
+                <h4 class="profile-modal-section-title">Core capabilities</h4>
+                <div class="profile-capability-list">
+                  <span class="profile-capability">Software architecture</span
+                  ><span class="profile-capability">Python</span
+                  ><span class="profile-capability">Java</span
+                  ><span class="profile-capability">C/C++</span
+                  ><span class="profile-capability">REST &amp; GraphQL</span
+                  ><span class="profile-capability">SQL &amp; NoSQL</span
+                  ><span class="profile-capability">AWS &amp; Azure</span
+                  ><span class="profile-capability">Terraform</span
+                  ><span class="profile-capability">Ansible</span
+                  ><span class="profile-capability">Docker</span
+                  ><span class="profile-capability">Platform engineering</span>
+                </div>
+              </section>
+              <div class="profile-modal-actions">
+                <a
+                  class="button outlined small"
+                  href="https://linkedin.com/in/carmeloalccoy"
+                  rel="noreferrer"
+                  target="_blank"
+                  >LinkedIn</a
+                ><a
+                  class="button outlined small"
+                  href="https://carmelocoy.github.io/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Portfolio</a
+                ><a
+                  class="button tonal small"
+                  href="mailto:carmeloalcarazcoy@gmail.com"
+                  >Email Carmelo</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </dialog>
   </body>

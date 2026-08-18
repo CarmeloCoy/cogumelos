@@ -109,7 +109,8 @@ for (const page of ["index.html", "how-we-work.html"]) {
     const text = isHome
       ? {
           ...locale.home.staticTranslations,
-          ...mapNestedStrings(locales.en.home.serviceContent, locale.home.serviceContent)
+           ...mapNestedStrings(locales.en.home.serviceContent, locale.home.serviceContent),
+           ...mapNestedStrings(locales.en.home.profileContent, locale.home.profileContent)
         }
       : mapEnglishValues(locales.en.caseStudy.translations, locale.caseStudy.translations);
     const attributes = isHome

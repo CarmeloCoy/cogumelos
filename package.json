@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/build.js",
-    "extract:texts": "node scripts/extract-texts.js"
+    "extract:texts": "node scripts/extract-texts.js",
+    "clean:translations": "node scripts/remove-stale-translations.js"
   },
   "devDependencies": {
     "vite": "^6.1.0"

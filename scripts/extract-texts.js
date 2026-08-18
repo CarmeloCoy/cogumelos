@@ -28,8 +28,22 @@ function unique(values) {
   return [...new Set(values.filter(Boolean))];
 }
 
+function removeIgnoredElements(html) {
+  const ignoredAttribute = "\\bdata-i18n-ignore(?:\\s|=|>|/)";
+  const ignoredElement = new RegExp(
+    `<([\\w:-]+)\\b(?=[^>]*${ignoredAttribute})[^>]*>[\\s\\S]*?<\\/\\1\\s*>`,
+    "gi"
+  );
+  const ignoredVoidElement = new RegExp(
+    `<[\\w:-]+\\b(?=[^>]*${ignoredAttribute})[^>]*\\/\\s*>`,
+    "gi"
+  );
+
+  return html.replace(ignoredElement, "").replace(ignoredVoidElement, "");
+}
+
 function extractText(html) {
-  const content = html
+  const content = removeIgnoredElements(html)
     .replace(/<!--[\s\S]*?-->/g, "")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
@@ -46,7 +60,7 @@ function extractAttributes(html, attribute) {
   const pattern = new RegExp(`\\b${attribute}=(['"])(.*?)\\1`, "gi");
   let match;
 
-  while ((match = pattern.exec(html))) values.push(normalise(match[2]));
+  while ((match = pattern.exec(removeIgnoredElements(html)))) values.push(normalise(match[2]));
   return unique(values);
 }
 
@@ -55,7 +69,7 @@ function extractKeyedText(html) {
   const pattern = /<([\w:-]+)\b([^>]*)\bdata-i18n=(['"])([^'"]+)\3[^>]*>([\s\S]*?)<\/\1\s*>/gi;
   let match;
 
-  while ((match = pattern.exec(html))) {
+  while ((match = pattern.exec(removeIgnoredElements(html)))) {
     const value = normalise(match[5].replace(/<[^>]+>/g, ""));
     if (value && !value.includes("{{")) values[match[4]] = value;
   }
@@ -68,7 +82,7 @@ function extractKeyedAttributes(html, attribute) {
   const pattern = new RegExp(`<[\\w:-]+\\b(?=[^>]*\\bdata-i18n-${attribute}=(['"])([^'"]+)\\1)(?=[^>]*\\b${attributeName}=(['"])(.*?)\\3)[^>]*>`, "gi");
   let match;
 
-  while ((match = pattern.exec(html))) values[match[2]] = normalise(match[4]);
+  while ((match = pattern.exec(removeIgnoredElements(html)))) values[match[2]] = normalise(match[4]);
   return values;
 }
 

@@ -5,12 +5,12 @@ into language-specific pages in the deployable `dist/` directory at build time.
 
 ## Local development
 
-Install dependencies with `npm install`, then run `npm run dev`. Vite serves the
-home page at the URL it prints (normally `http://localhost:5173`) and also makes
-`how-we-work.html` available at `/how-we-work.html`.
+Install dependencies with `npm install`, then run `npm run dev`. The static
+development server serves the home page at `http://localhost:4200` and reloads
+the browser when source files change. `how-we-work.html` is available at
+`/how-we-work.html`.
 
-Use `npm run build` to generate the production site in `dist/`, or `npm run
-preview` to inspect that build locally.
+Use `npm run build` to generate the production site in `dist/`.
 
 ## Structure
 

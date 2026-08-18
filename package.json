@@ -2,12 +2,12 @@
   "name": "cogumelos",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "live-server --port=4200",
     "build": "node scripts/build.js",
     "extract:texts": "node scripts/extract-texts.js",
     "clean:translations": "node scripts/remove-stale-translations.js"
   },
   "devDependencies": {
-    "vite": "^6.1.0"
+    "live-server": "^1.2.2"
   }
 }

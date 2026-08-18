@@ -2,6 +2,15 @@
 
 Static, multilingual site prepared for GitHub Pages.
 
+## Local development
+
+Install dependencies with `npm install`, then run `npm run dev`. Vite serves the
+home page at the URL it prints (normally `http://localhost:5173`) and also makes
+`how-we-work.html` available at `/how-we-work.html`.
+
+Use `npm run build` to generate the production site in `dist/`, or `npm run
+preview` to inspect that build locally.
+
 ## Structure
 
 - `index.html` — studio home and service overview

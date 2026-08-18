@@ -1,6 +1,7 @@
 # Carolina & Carmelo — Product & Engineering Studio
 
-Static, multilingual site prepared for GitHub Pages.
+Static, multilingual site prepared for GitHub Pages. Source HTML is compiled
+into language-specific pages in the deployable `dist/` directory at build time.
 
 ## Local development
 
@@ -13,12 +14,17 @@ preview` to inspect that build locally.
 
 ## Structure
 
-- `index.html` — studio home and service overview
-- `how-we-work.html` — worked example showing how product and engineering decisions are connected
+- `index.html` — studio home and service-overview template
+- `how-we-work.html` — worked-example template showing how product and engineering decisions are connected
 - `assets/css/styles.css` — shared visual system and responsive home styles
 - `assets/css/case-study.css` — styles scoped to the worked-example page
 - `assets/js/app.js` — home language switcher, theme, service tabs, profile dialogs and animations
 - `assets/js/case-study.js` — worked-example translations, theme, navigation and reveal behaviour
+- `locales/en.json` — English content
+- `locales/es.json` — Spanish content
+- `locales/pt.json` — Portuguese content
+- `scripts/build.js` — dependency-free build and template renderer
+- `scripts/extract-texts.js` — synchronizes template text with locale files
 - `assets/images/` — profile photos, favicon and social preview
 - `assets/images/case-study/` — repository, identity-system and social-preview evidence for the worked example
 
@@ -28,8 +34,40 @@ The site is available in English, Spanish and Portuguese. These are not only
 localised versions of the interface: they represent the languages in which
 Carolina and Carmelo are comfortable working with clients and partner teams.
 
-The language preference is shared between `index.html` and
-`how-we-work.html` through local storage.
+The language selector links to the matching generated page. English is
+published at the root, Spanish at `es/`, and Portuguese at `pt/`.
+
+## Build
+
+Run `npm run build` to generate the deployable site in `dist/`. The build:
+
+1. Validates the independent locale JSON files.
+2. Renders localized HTML for English, Spanish, and Portuguese, including
+   language-specific metadata and interactive content.
+3. Copies static assets to `dist/assets/`.
+
+The generated page structure is:
+
+```text
+dist/
+  index.html
+  how-we-work.html
+  es/index.html
+  es/how-we-work.html
+  pt/index.html
+  pt/how-we-work.html
+```
+
+Deploy the contents of `dist/`; do not publish the source files directly.
+
+## Translation inventory
+
+Run `npm run extract:texts` after changing page-template copy. It writes
+`locales/source-texts.json`, an inventory of visible text and translatable
+`alt`, `aria-label`, and `title` attributes. It also adds or updates English
+source values in the structured locale files. New Spanish and Portuguese
+entries use the English source as a fallback; existing translations are
+preserved.
 
 ## Navigation
 
@@ -40,10 +78,11 @@ The language preference is shared between `index.html` and
 
 ## Publish on GitHub Pages
 
-1. Upload the **contents** of this folder to the repository root.
-2. In **Settings → Pages**, choose **Deploy from a branch**.
-3. Select `main` and `/ (root)`.
-4. Save and wait for GitHub Pages to deploy.
+1. Run `npm run build`.
+2. Upload the **contents** of `dist/` to the repository root.
+3. In **Settings → Pages**, choose **Deploy from a branch**.
+4. Select `main` and `/ (root)`.
+5. Save and wait for GitHub Pages to deploy.
 
 ## Optional metadata update
 

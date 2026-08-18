@@ -6,7 +6,7 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
 const localeDirectory = path.join(root, "locales");
-const languages = ["en", "es", "pt"];
+const languages = ["es", "pt"];
 
 function decodeHtml(value) {
   return value

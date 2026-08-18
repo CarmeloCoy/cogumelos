@@ -7,7 +7,7 @@ const path = require("node:path");
 const root = path.resolve(__dirname, "..");
 const templateDirectory = root;
 const output = path.join(root, "locales", "source-texts.json");
-const languages = ["en", "es", "pt"];
+const languages = ["es", "pt"];
 
 function decodeHtml(value) {
   return value
@@ -90,9 +90,9 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
-function syncTranslations(translations, source, language) {
+function syncTranslations(translations, source) {
   for (const [key, value] of Object.entries(source)) {
-    if (language === "en" || !(key in translations)) translations[key] = value;
+    if (!(key in translations)) translations[key] = value;
   }
 }
 
@@ -135,10 +135,10 @@ for (const language of languages) {
   const localeFile = path.join(root, "locales", `${language}.json`);
   const locale = readJson(localeFile);
 
-  syncTranslations(locale.home.staticTranslations, homeText, language);
-  syncTranslations(locale.home.attributeTranslations, homeAttributes, language);
-  syncTranslations(locale.caseStudy.translations, caseStudyText, language);
-  syncTranslations(locale.caseStudy.ariaTranslations, caseStudyAria, language);
+  syncTranslations(locale.home.staticTranslations, homeText);
+  syncTranslations(locale.home.attributeTranslations, homeAttributes);
+  syncTranslations(locale.caseStudy.translations, caseStudyText);
+  syncTranslations(locale.caseStudy.ariaTranslations, caseStudyAria);
   writeJson(localeFile, locale);
 }
 

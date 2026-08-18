@@ -24,15 +24,10 @@
     const detailPanel = document.getElementById("engagementDetail");
     const tabButtons = [...document.querySelectorAll(".tab-button")];
 
-    const localeData = window.STUDIO_LOCALE.home;
-    const {serviceContent, attributeTranslations, profileContent, profileUi} = localeData;
-
-    const assetPath = root.lang === "en" ? "assets" : "../assets";
-    const profileLinks = {"carolina": {"linkedin": "https://www.linkedin.com/in/carolinavasconceloscastro/", "portfolio": "https://carolinavasconceloscastro.github.io/", "email": "mailto:cavacaaz@gmail.com", "photo": `${assetPath}/images/carolina-vasconcelos.jpg`, "position": "50% 42%"}, "carmelo": {"linkedin": "https://linkedin.com/in/carmeloalccoy", "portfolio": "https://carmelocoy.github.io/", "email": "mailto:carmeloalcarazcoy@gmail.com", "photo": `${assetPath}/images/carmelo-alcaraz.jpg`, "position": "50% 50%"}};
     const profileDialog = document.getElementById("profileDialog");
-    const profileDialogContent = document.getElementById("profileDialogContent");
     const profileDialogClose = document.getElementById("profileDialogClose");
     const profileCards = [...document.querySelectorAll(".person-card[data-profile]")];
+    const profileViews = [...document.querySelectorAll("[data-profile-detail]")];
     let activeProfile = null;
     let profileReturnFocus = null;
 
@@ -60,13 +55,7 @@
       const isOpen = navLinks.classList.toggle("open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
       menuToggle.querySelector("use").setAttribute("href", isOpen ? "#icon-close" : "#icon-menu");
-      const key = isOpen ? "Close navigation" : "Open navigation";
-      menuToggle.setAttribute(
-        "aria-label",
-        currentLanguage === "en"
-          ? key
-          : (attributeTranslations[key] || key)
-      );
+      menuToggle.setAttribute("aria-label", isOpen ? menuToggle.dataset.closeLabel : menuToggle.dataset.openLabel);
     });
 
     navLinks.querySelectorAll("a").forEach(link => {
@@ -89,131 +78,19 @@
       }
     }, { passive: true });
 
-    function renderService(key) {
-      const item = serviceContent[key];
-      detailPanel.innerHTML = `
-        <div class="detail-copy">
-          <p class="detail-kicker">${item.kicker}</p>
-          <h3>${item.title}</h3>
-          <p>${item.description}</p>
-          <div class="deliverables">
-            ${item.deliverables.map(value => `<span class="deliverable">${value}</span>`).join("")}
-          </div>
-        </div>
-        <aside class="detail-aside">
-          <svg class="ui-icon" aria-hidden="true"><use href="#icon-${item.icon}"></use></svg>
-          <div>
-            <strong>${item.best}</strong>
-            <p>${item.note}</p>
-          </div>
-        </aside>
-      `;
-    }
-
-    function updateProfileCardLabels() {
-      const labels = profileUi;
-      document.querySelectorAll(".profile-open-label").forEach(label => {
-        label.textContent = labels.open;
+    function displayService(key) {
+      detailPanel.querySelectorAll("[data-service-detail]").forEach(view => {
+        view.hidden = view.dataset.serviceDetail !== key;
       });
-      const carolinaCard = document.querySelector('[data-profile="carolina"]');
-      const carmeloCard = document.querySelector('[data-profile="carmelo"]');
-      if (carolinaCard) carolinaCard.setAttribute("aria-label", labels.carolina_aria);
-      if (carmeloCard) carmeloCard.setAttribute("aria-label", labels.carmelo_aria);
-    }
-
-    function profileIcon(name) {
-      return `<svg class="ui-icon" aria-hidden="true"><use href="#icon-${name}"></use></svg>`;
-    }
-
-    function renderProfileModal(key) {
-      const item = profileContent[key];
-      const links = profileLinks[key];
-      const isEngineering = key === "carmelo";
-
-      profileDialogContent.innerHTML = `
-        <article class="profile-modal-layout">
-          <header class="profile-modal-hero ${isEngineering ? "engineering" : ""}">
-            <div class="profile-modal-hero-copy">
-              <span class="profile-modal-location">${item.location}</span>
-              <h2 id="profileDialogTitle">${item.name}</h2>
-              <p class="profile-modal-role">${item.role}</p>
-              <h3 class="profile-modal-headline">${item.headline}</h3>
-              <p class="profile-modal-intro">${item.intro}</p>
-            </div>
-
-            <figure class="profile-modal-photo-card">
-              <img
-                class="profile-modal-photo"
-                src="${links.photo}"
-                alt="${item.name}"
-                style="object-position:${links.position}">
-            </figure>
-          </header>
-
-          <div class="profile-modal-content ${isEngineering ? "engineering" : ""}">
-            <div class="profile-modal-narrative">
-              ${item.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join("")}
-            </div>
-
-            <section class="profile-modal-section">
-              <h4 class="profile-modal-section-title">${item.value_title}</h4>
-              <div class="profile-value-grid">
-                ${item.values.map(value => `
-                  <article class="profile-value-card">
-                    <span class="profile-value-icon">${profileIcon(value.icon)}</span>
-                    <div>
-                      <h4>${value.title}</h4>
-                      <p>${value.copy}</p>
-                    </div>
-                  </article>
-                `).join("")}
-              </div>
-            </section>
-
-            <section class="profile-modal-section">
-              <h4 class="profile-modal-section-title">${item.evidence_title}</h4>
-              <div class="profile-evidence-list">
-                ${item.evidence.map(evidence => `
-                  <article class="profile-evidence-item">
-                    <span class="profile-evidence-dot" aria-hidden="true"></span>
-                    <div>
-                      <strong>${evidence.title}</strong>
-                      <p>${evidence.copy}</p>
-                    </div>
-                  </article>
-                `).join("")}
-              </div>
-            </section>
-
-            <section class="profile-modal-section">
-              <h4 class="profile-modal-section-title">${item.capabilities_title}</h4>
-              <div class="profile-capability-list">
-                ${item.capabilities.map(capability => `<span class="profile-capability">${capability}</span>`).join("")}
-              </div>
-            </section>
-
-            <div class="profile-modal-actions">
-              <a class="button outlined small" href="${links.linkedin}" target="_blank" rel="noreferrer">
-                ${item.links.linkedin}
-              </a>
-              <a class="button outlined small" href="${links.portfolio}" target="_blank" rel="noreferrer">
-                ${item.links.portfolio}
-              </a>
-              <a class="button tonal small" href="${links.email}">
-                ${item.links.email}
-              </a>
-            </div>
-          </div>
-        </article>
-      `;
-
-      profileDialogClose.setAttribute("aria-label", item.close);
     }
 
     function openProfileDialog(key, sourceElement) {
       activeProfile = key;
       profileReturnFocus = sourceElement || document.activeElement;
-      renderProfileModal(key);
+      profileViews.forEach(view => {
+        view.hidden = view.dataset.profileDetail !== key;
+      });
+      profileDialog.setAttribute("aria-labelledby", `profileDialogTitle-${key}`);
       profileDialog.showModal();
       document.body.style.overflow = "hidden";
       requestAnimationFrame(() => profileDialogClose.focus());
@@ -258,9 +135,7 @@
         option.setAttribute("aria-selected", String(selected));
       });
 
-      renderService(currentService);
-      updateProfileCardLabels();
-      if (activeProfile && profileDialog.open) renderProfileModal(activeProfile);
+      displayService(currentService);
     }
 
     function setLanguageMenu(open) {
@@ -349,7 +224,7 @@
       });
       currentService = button.dataset.service;
       detailPanel.setAttribute("aria-labelledby", button.id);
-      renderService(currentService);
+      displayService(currentService);
       if (moveFocus) button.focus();
     }
 

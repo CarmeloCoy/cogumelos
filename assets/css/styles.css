@@ -3445,6 +3445,10 @@ html, body {
   display:block;
   min-height:0;
 }
+
+.profile-modal-layout[hidden] {
+  display: none !important;
+}
 .profile-modal-hero{
   position:relative;
   isolation:isolate;

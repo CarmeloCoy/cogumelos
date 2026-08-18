@@ -20,7 +20,6 @@ Use `npm run build` to generate the production site in `dist/`.
 - `assets/css/case-study.css` — styles scoped to the worked-example page
 - `assets/js/app.js` — home language switcher, theme, service tabs, profile dialogs and animations
 - `assets/js/case-study.js` — worked-example translations, theme, navigation and reveal behaviour
-- `locales/en.json` — English content
 - `locales/es.json` — Spanish content
 - `locales/pt.json` — Portuguese content
 - `scripts/build.js` — dependency-free build and template renderer
@@ -66,7 +65,7 @@ Run `npm run extract:texts` after changing page-template copy. It writes
 `locales/source-texts.json`, an inventory of visible text and translatable
 `alt`, `aria-label`, and `title` attributes. It also adds or updates English
 source values in the structured locale files. New Spanish and Portuguese
-entries use the English source as a fallback; existing translations are
+entries use the English template source as a fallback; existing translations are
 preserved.
 
 Add `data-i18n-ignore` to an element whose text or supported translation

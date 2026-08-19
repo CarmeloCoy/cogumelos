@@ -3,10 +3,8 @@
     "staticTranslations": {
       "Product & Engineering Studio": "Estúdio de Produto e Engenharia",
       "What we solve": "O que resolvemos",
-      "Services": "Serviços",
       "How we work": "Como trabalhamos",
       "Profiles": "Perfis",
-      "Discuss a project": "Falar sobre um projeto",
       "Senior product & engineering duo · Madrid / Europe": "Dupla sénior de produto e engenharia · Madrid / Europa",
       "Product clarity.": "Clareza de produto.",
       "Engineering depth.": "Profundidade de engenharia.",
@@ -99,12 +97,6 @@
       "Carolina & Carmelo — Product & Engineering Studio": "Carolina & Carmelo — Estúdio de Produto e Engenharia",
       "Skip to content": "Saltar para o conteúdo",
       "Carolina & Carmelo": "Carolina & Carmelo",
-      "English": "English",
-      "EN": "EN",
-      "ES": "ES",
-      "Español": "Español",
-      "PT": "PT",
-      "Português": "Português",
       "Carolina Vasconcelos": "Carolina Vasconcelos",
       "UX/UI": "UX/UI",
       "B2B SaaS": "B2B SaaS",
@@ -179,7 +171,6 @@
       "System architecture": "Arquitetura de sistemas",
       "Designs software structures, services, APIs and data foundations around product needs and technical constraints.": "Desenha estruturas de software, serviços, APIs e bases de dados a partir das necessidades de produto e restrições técnicas.",
       "Cloud & platform engineering": "Cloud e engenharia de plataforma",
-      "Connects AWS, Azure, Docker and cloud operations with the capabilities teams need to build and run software.": "Liga AWS, Azure, Docker e operações cloud às capacidades que as equipas precisam para construir e operar software.",
       "Automation & reliability": "Automação e fiabilidade",
       "Uses Terraform, Ansible and Infrastructure as Code to reduce manual work and create repeatable technical foundations.": "Utiliza Terraform, Ansible e infraestrutura como código para reduzir trabalho manual e criar bases técnicas repetíveis.",
       "Platform Engineer · Nommon": "Platform Engineer · Nommon",
@@ -192,65 +183,14 @@
       "Combines software engineering with optimisation, statistics, numerical methods, modelling and analytical problem solving.": "Combina engenharia de software com otimização, estatística, métodos numéricos, modelação e resolução analítica de problemas.",
       "Software architecture": "Arquitetura de software",
       "Python": "Python",
-      "Java": "Java",
-      "C/C++": "C/C++",
       "REST & GraphQL": "REST & GraphQL",
       "SQL & NoSQL": "SQL & NoSQL",
       "AWS & Azure": "AWS & Azure",
       "Terraform": "Terraform",
       "Ansible": "Ansible",
       "Docker": "Docker",
-      "Email Carmelo": "Enviar email ao Carmelo"
-    },
-    "serviceContent": {
-      "definition": {
-        "kicker": "01 · Sprint de definição de produto",
-        "title": "Transformamos uma oportunidade ainda pouco definida numa direção de produto que a equipa consegue defender e executar.",
-        "description": "Alinhamos o problema de negócio, os utilizadores prioritários, os fluxos e as restrições técnicas antes de investir a sério em design e desenvolvimento.",
-        "deliverables": [
-          "Definição do problema",
-          "Utilizadores prioritários",
-          "Fluxos principais",
-          "Protótipo",
-          "Âmbito do MVP",
-          "Esboço de arquitetura"
-        ],
-        "icon": "travel_explore",
-        "best": "Faz sentido quando a oportunidade existe, mas ainda não há alinhamento suficiente sobre o que construir.",
-        "note": "Útil antes de um MVP, de uma funcionalidade estratégica, de um redesign ou de uma decisão técnica difícil de reverter."
-      },
-      "foundation": {
-        "kicker": "02 · Base de produto",
-        "title": "Transformamos uma direção validada numa base de produto preparada para utilização real.",
-        "description": "Desenhamos a experiência e estabelecemos as bases de frontend, backend, dados e cloud para lançar, aprender e continuar a evoluir sem recomeçar.",
-        "deliverables": [
-          "UX/UI",
-          "Design system",
-          "Frontend",
-          "Serviços backend",
-          "APIs e dados",
-          "Infraestrutura cloud"
-        ],
-        "icon": "foundation",
-        "best": "Faz sentido quando o problema e o âmbito inicial já são claros, mas ainda falta construir o produto como um sistema coerente.",
-        "note": "Adequado para novos produtos B2B, plataformas internas e MVPs validados que precisam de amadurecer."
-      },
-      "rescue": {
-        "kicker": "03 · Recuperação e modernização de produto",
-        "title": "Fazemos com que um produto existente volte a ser fácil de utilizar, alterar e operar.",
-        "description": "Identificamos onde a complexidade do produto, a dívida de UX e as restrições técnicas estão a bloquear a equipa e definimos um caminho de modernização realista.",
-        "deliverables": [
-          "Auditoria de produto e UX",
-          "Avaliação técnica",
-          "Mapa de prioridades",
-          "Redesign dos fluxos",
-          "Plano de modernização",
-          "Arquitetura-alvo"
-        ],
-        "icon": "sync_alt",
-        "best": "Faz sentido quando o produto funciona, mas os utilizadores sentem fricção e cada alteração demora mais do que deveria.",
-        "note": "Especialmente útil em sistemas legacy, SaaS em crescimento e ferramentas operacionais."
-      }
+      "Email Carmelo": "Enviar email ao Carmelo",
+      "With capabilities and experience across the three major cloud providers, teams can build, deploy, and run software effectively.": "Com capacidades e experiência através dos três principais provedores de cloud, as equipas podem construir, implementar e executar software de forma eficaz."
     },
     "metaContent": {
       "title": "Carolina & Carmelo — Estúdio de Produto e Engenharia",
@@ -279,143 +219,6 @@
     "menuLabels": {
       "open": "Abrir navegação",
       "close": "Fechar navegação"
-    },
-    "profileContent": {
-      "carolina": {
-        "name": "Carolina Vasconcelos",
-        "role": "Responsável de Produto e Experiência",
-        "location": "Madrid · Produto, UX e frontend",
-        "headline": "Liga direção de produto, UX complexa e execução técnica.",
-        "intro": "Carolina é um perfil técnico e de UX/UI com mentalidade de produto e experiência em product ownership, SaaS B2B complexo, produtos operacionais e entrega frontend.",
-        "paragraphs": [
-          "A sua principal contribuição é transformar prioridades de negócio e necessidades ambíguas dos utilizadores num âmbito focado, percursos compreensíveis e incrementos de produto implementáveis. Consegue avançar desde o discovery e a estrutura do roadmap até à arquitetura de informação, modelos de interação, user stories, critérios de aceitação e preparação de releases sem perder a razão pela qual o produto está a ser construído.",
-          "Por ter liderado modernização UX/UI e frontend em produtos com fortes restrições, desenha considerando estados do sistema, casos limite, lógica de componentes, acessibilidade e realidade de implementação. É especialmente valiosa em produtos onde dashboards, datasets, mapas, filtros, alertas e fluxos operacionais precisam de se tornar claros sem simplificar demasiado o sistema."
-        ],
-        "value_title": "Onde Carolina cria valor",
-        "values": [
-          {
-            "icon": "explore",
-            "title": "Direção de produto",
-            "copy": "Clarifica o problema, define um âmbito focado e liga prioridades do roadmap ao valor para utilizadores e negócio."
-          },
-          {
-            "icon": "account_tree",
-            "title": "Design de experiências complexas",
-            "copy": "Estrutura fluxos operacionais e intensivos em dados em percursos, estados e padrões de interação coerentes."
-          },
-          {
-            "icon": "design_services",
-            "title": "Ponte entre design e entrega",
-            "copy": "Leva decisões para Figma, lógica de componentes, critérios de aceitação, planos frontend, QA e preparação de releases."
-          }
-        ],
-        "evidence_title": "Experiência relevante",
-        "evidence": [
-          {
-            "title": "Product Manager / Product Design Owner · Nommon",
-            "copy": "Lidera discovery, estrutura de roadmap, qualidade do backlog e direção UX para uma plataforma SaaS multiproduto de mobilidade e inteligência de dados."
-          },
-          {
-            "title": "Senior Frontend Developer & UX/UI Lead · Siemens Mobility",
-            "copy": "Liderou a modernização UX/UI e frontend de um produto operacional legacy, equilibrando usabilidade, arquitetura, integrações e risco de entrega."
-          },
-          {
-            "title": "UX Advisor · PsyPilot",
-            "copy": "Apoia decisões iniciais de produto, fluxos de serviço e arquitetura de informação para psicólogos, equipas de clínica e pacientes."
-          }
-        ],
-        "capabilities_title": "Capacidades principais",
-        "capabilities": [
-          "Discovery de produto",
-          "Roadmaps e backlog",
-          "Liderança UX/UI",
-          "Arquitetura de informação",
-          "Design systems",
-          "Fluxos SaaS complexos",
-          "Entrega frontend",
-          "Critérios de aceitação",
-          "Alinhamento de stakeholders"
-        ],
-        "links": {
-          "linkedin": "LinkedIn",
-          "portfolio": "Portfólio",
-          "email": "Enviar email à Carolina"
-        },
-        "close": "Fechar perfil"
-      },
-      "carmelo": {
-        "name": "Carmelo Alcaraz Coy",
-        "role": "Responsável de Engenharia e Plataforma",
-        "location": "Madrid · Software, cloud e plataforma",
-        "headline": "Transforma requisitos de produto em sistemas fiáveis e bases técnicas.",
-        "intro": "Carmelo é engenheiro de software e plataforma com uma dupla formação em Engenharia Informática e Matemática e uma carreira que abrange desenvolvimento, arquitetura, cloud e infraestrutura.",
-        "paragraphs": [
-          "A sua progressão de software engineer para senior software engineer e platform engineer dá-lhe uma visão ampla de como as aplicações são desenhadas, operadas e evoluídas. Consegue ligar serviços backend, APIs, bases de dados e aplicações web às capacidades cloud e de automação que as equipas precisam para entregar de forma consistente.",
-          "A base matemática acrescenta pensamento analítico estruturado às decisões de arquitetura e engenharia. É particularmente útil quando um produto precisa de mais do que implementação: trade-offs técnicos explícitos, design sustentável, infraestrutura como código, capacidades de plataforma e uma base preparada para mudança a longo prazo."
-        ],
-        "value_title": "Onde Carmelo cria valor",
-        "values": [
-          {
-            "icon": "schema",
-            "title": "Arquitetura de sistemas",
-            "copy": "Desenha estruturas de software, serviços, APIs e bases de dados a partir das necessidades de produto e restrições técnicas."
-          },
-          {
-            "icon": "cloud_sync",
-            "title": "Cloud e engenharia de plataforma",
-            "copy": "Liga AWS, Azure, Docker e operações cloud às capacidades que as equipas precisam para construir e operar software."
-          },
-          {
-            "icon": "automation",
-            "title": "Automação e fiabilidade",
-            "copy": "Utiliza Terraform, Ansible e infraestrutura como código para reduzir trabalho manual e criar bases técnicas repetíveis."
-          }
-        ],
-        "evidence_title": "Experiência relevante",
-        "evidence": [
-          {
-            "title": "Platform Engineer · Nommon",
-            "copy": "Desenha e opera plataformas cloud, automação de infraestrutura e soluções internas que apoiam as equipas de software."
-          },
-          {
-            "title": "Senior Software Engineer · Nommon",
-            "copy": "Trabalhou em arquitetura de software, desenho de sistemas, aplicações web, visualização de dados e liderança técnica em equipas de projeto."
-          },
-          {
-            "title": "Software Engineer · Capgemini",
-            "copy": "Desenvolveu e manteve software empresarial com metodologias estabelecidas e experiência em Java e C/C++."
-          },
-          {
-            "title": "Engenharia Informática + Matemática",
-            "copy": "Combina engenharia de software com otimização, estatística, métodos numéricos, modelação e resolução analítica de problemas."
-          }
-        ],
-        "capabilities_title": "Capacidades principais",
-        "capabilities": [
-          "Arquitetura de software",
-          "Python",
-          "Java",
-          "C/C++",
-          "REST e GraphQL",
-          "SQL e NoSQL",
-          "AWS e Azure",
-          "Terraform",
-          "Ansible",
-          "Docker",
-          "Engenharia de plataforma"
-        ],
-        "links": {
-          "linkedin": "LinkedIn",
-          "portfolio": "Portfólio",
-          "email": "Enviar email ao Carmelo"
-        },
-        "close": "Fechar perfil"
-      }
-    },
-    "profileUi": {
-      "open": "Ver perfil completo",
-      "carolina_aria": "Abrir o perfil completo da Carolina Vasconcelos",
-      "carmelo_aria": "Abrir o perfil completo do Carmelo Alcaraz Coy"
     }
   },
   "caseStudy": {

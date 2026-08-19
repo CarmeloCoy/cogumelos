@@ -16,7 +16,9 @@ function decodeHtml(value) {
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)));
+    .replace(/&#x([\da-f]+);/gi, (_, code) =>
+      String.fromCodePoint(Number.parseInt(code, 16)),
+    );
 }
 
 function normalise(value) {
@@ -35,11 +37,11 @@ function removeIgnoredElements(html) {
   const ignoredAttribute = "\\bdata-i18n-ignore(?:\\s|=|>|/)";
   const ignoredElement = new RegExp(
     `<([\\w:-]+)\\b(?=[^>]*${ignoredAttribute})[^>]*>[\\s\\S]*?<\\/\\1\\s*>`,
-    "gi"
+    "gi",
   );
   const ignoredVoidElement = new RegExp(
     `<[\\w:-]+\\b(?=[^>]*${ignoredAttribute})[^>]*\\/\\s*>`,
-    "gi"
+    "gi",
   );
 
   return html.replace(ignoredElement, "").replace(ignoredVoidElement, "");
@@ -66,7 +68,8 @@ function extractAttributes(html, attribute) {
   const pattern = new RegExp(`\\b${attribute}=(['"])(.*?)\\1`, "gi");
   let match;
 
-  while ((match = pattern.exec(removeIgnoredElements(html)))) values.add(normalise(match[2]));
+  while ((match = pattern.exec(removeIgnoredElements(html))))
+    values.add(normalise(match[2]));
   return values;
 }
 
@@ -76,7 +79,8 @@ function extractKeys(html, attribute) {
   const pattern = new RegExp(`\\b${attributeName}=(['"])([^'"]+)\\1`, "gi");
   let match;
 
-  while ((match = pattern.exec(removeIgnoredElements(html)))) keys.add(match[2]);
+  while ((match = pattern.exec(removeIgnoredElements(html))))
+    keys.add(match[2]);
   return keys;
 }
 
@@ -93,12 +97,15 @@ function removeStaleEntries(translations, activeKeys) {
 }
 
 const homeHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
-const caseStudyHtml = fs.readFileSync(path.join(root, "how-we-work.html"), "utf8");
+const caseStudyHtml = fs.readFileSync(
+  path.join(root, "how-we-work.html"),
+  "utf8",
+);
 const homeText = extractText(homeHtml);
 const homeAttributes = new Set([
   ...extractAttributes(homeHtml, "alt"),
   ...extractAttributes(homeHtml, "aria-label"),
-  ...extractAttributes(homeHtml, "title")
+  ...extractAttributes(homeHtml, "title"),
 ]);
 const caseStudyTranslations = extractKeys(caseStudyHtml);
 const caseStudyAria = extractKeys(caseStudyHtml, "aria");
@@ -109,9 +116,18 @@ for (const language of languages) {
   const locale = readJson(localeFile);
 
   removed += removeStaleEntries(locale.home.staticTranslations, homeText);
-  removed += removeStaleEntries(locale.home.attributeTranslations, homeAttributes);
-  removed += removeStaleEntries(locale.caseStudy.translations, caseStudyTranslations);
-  removed += removeStaleEntries(locale.caseStudy.ariaTranslations, caseStudyAria);
+  removed += removeStaleEntries(
+    locale.home.attributeTranslations,
+    homeAttributes,
+  );
+  removed += removeStaleEntries(
+    locale.caseStudy.translations,
+    caseStudyTranslations,
+  );
+  removed += removeStaleEntries(
+    locale.caseStudy.ariaTranslations,
+    caseStudyAria,
+  );
   writeJson(localeFile, locale);
 }
 

@@ -510,8 +510,8 @@
         </a>
         <div class="nav-links" id="navLinks">
           <a class="nav-link" href="#problems">What we solve</a>
-          <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="how-we-work.html">How we work</a>
+          <a class="nav-link" href="#services">Ways to work together</a>
+          <a class="nav-link" href="#delivery">How we work</a>
           <a class="nav-link" href="#team">Profiles</a>
         </div>
         <div class="bar-actions">
@@ -528,7 +528,12 @@
               <svg aria-hidden="true" class="ui-icon language-globe">
                 <use href="#icon-language"></use>
               </svg>
-              <span class="language-current" id="languageCurrent">English</span>
+              <span
+                class="language-current"
+                id="languageCurrent"
+                data-i18n-ignore
+                >English</span
+              >
               <svg aria-hidden="true" class="ui-icon language-chevron">
                 <use href="#icon-expand_more"></use>
               </svg>
@@ -547,8 +552,8 @@
                 role="option"
                 type="button"
               >
-                <span class="language-code">EN</span>
-                <span class="language-name">English</span>
+                <span class="language-code" data-i18n-ignore>EN</span>
+                <span class="language-name" data-i18n-ignore>English</span>
                 <svg aria-hidden="true" class="ui-icon option-check">
                   <use href="#icon-check"></use>
                 </svg>
@@ -560,8 +565,8 @@
                 role="option"
                 type="button"
               >
-                <span class="language-code">ES</span>
-                <span class="language-name">Español</span>
+                <span class="language-code" data-i18n-ignore>ES</span>
+                <span class="language-name" data-i18n-ignore>Español</span>
                 <svg aria-hidden="true" class="ui-icon option-check">
                   <use href="#icon-check"></use>
                 </svg>
@@ -573,8 +578,8 @@
                 role="option"
                 type="button"
               >
-                <span class="language-code">PT</span>
-                <span class="language-name">Português</span>
+                <span class="language-code" data-i18n-ignore>PT</span>
+                <span class="language-name" data-i18n-ignore>Português</span>
                 <svg aria-hidden="true" class="ui-icon option-check">
                   <use href="#icon-check"></use>
                 </svg>
@@ -591,7 +596,9 @@
               <use href="#icon-contrast"></use>
             </svg>
           </button>
-          <a class="button filled small" href="#contact">Discuss a project</a>
+          <a class="button filled small" href="#contact"
+            >Discuss your product</a
+          >
           <button
             aria-controls="navLinks"
             aria-expanded="false"
@@ -970,7 +977,7 @@
               role="tabpanel"
               tabindex="0"
             >
-              <div data-service-detail="definition">
+              <div class="detail-container" data-service-detail="definition">
                 <div class="detail-copy">
                   <p class="detail-kicker">01 · Product Definition Sprint</p>
                   <h3>
@@ -1007,7 +1014,11 @@
                   </div>
                 </aside>
               </div>
-              <div data-service-detail="foundation" hidden="">
+              <div
+                class="detail-container"
+                data-service-detail="foundation"
+                hidden=""
+              >
                 <div class="detail-copy">
                   <p class="detail-kicker">02 · Product Foundation</p>
                   <h3>
@@ -1045,7 +1056,11 @@
                   </div>
                 </aside>
               </div>
-              <div data-service-detail="rescue" hidden="">
+              <div
+                class="detail-container"
+                data-service-detail="rescue"
+                hidden=""
+              >
                 <div class="detail-copy">
                   <p class="detail-kicker">
                     03 · Product Rescue &amp; Modernisation
@@ -1227,7 +1242,7 @@
                 class="button filled"
                 href="mailto:cavacaaz@gmail.com?cc=carmeloalcarazcoy@gmail.com&amp;subject=Product%20and%20engineering%20project"
               >
-                Discuss a project
+                Discuss your product
                 <svg aria-hidden="true" class="ui-icon">
                   <use href="#icon-arrow_forward"></use>
                 </svg>
@@ -1251,7 +1266,7 @@
         </div>
         <div class="footer-links">
           <a href="#problems">What we solve</a>
-          <a href="#services">Services</a>
+          <a href="#services">Ways to work together</a>
           <a href="how-we-work.html">How we work</a>
           <a href="#contact">Contact</a>
         </div>
@@ -1543,8 +1558,9 @@
                     <div>
                       <h4>Cloud &amp; platform engineering</h4>
                       <p>
-                        Connects AWS, Azure, Docker and cloud operations with
-                        the capabilities teams need to build and run software.
+                        With capabilities and experience across the three major
+                        cloud providers, teams can build, deploy, and run
+                        software effectively.
                       </p>
                     </div>
                   </article>
@@ -1630,8 +1646,6 @@
                 <div class="profile-capability-list">
                   <span class="profile-capability">Software architecture</span
                   ><span class="profile-capability">Python</span
-                  ><span class="profile-capability">Java</span
-                  ><span class="profile-capability">C/C++</span
                   ><span class="profile-capability">REST &amp; GraphQL</span
                   ><span class="profile-capability">SQL &amp; NoSQL</span
                   ><span class="profile-capability">AWS &amp; Azure</span

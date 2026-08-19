@@ -1,57 +1,55 @@
 {
   "home": {
     "staticTranslations": {
-      "Product & Engineering Studio": "Estudio de Producto e Ingeniería",
+      "Product & Engineering Studio": "Estudio de Producto y Tecnología",
       "What we solve": "Qué resolvemos",
-      "Services": "Servicios",
       "How we work": "Cómo trabajamos",
       "Profiles": "Perfiles",
-      "Discuss a project": "Hablar de un proyecto",
-      "Senior product & engineering duo · Madrid / Europe": "Dúo sénior de producto e ingeniería · Madrid / Europa",
-      "Product clarity.": "Claridad de producto.",
-      "Engineering depth.": "Profundidad de ingeniería.",
-      "We help teams turn": "Ayudamos a los equipos a convertir",
-      "complex workflows and technical constraints": "flujos complejos y restricciones técnicas",
-      "into clear, scalable software—from product direction and UX to architecture, implementation and cloud foundations.": "en software claro y escalable: desde la dirección de producto y la UX hasta la arquitectura, la implementación y las bases cloud.",
+      "Senior product & engineering duo · Madrid / Europe": "Dúo sénior de producto y tecnología · Madrid / Europa",
+      "Product clarity.": "Producto claro.",
+      "Engineering depth.": "Tecnología sólida.",
+      "We help teams turn": "Convertimos",
+      "complex workflows and technical constraints": "flujos de trabajo complejos y restricciones técnicas",
+      "into clear, scalable software—from product direction and UX to architecture, implementation and cloud foundations.": "en software claro y escalable—conectando la estrategia de producto y la UX con la arquitectura, el desarrollo y la infraestructura en la nube.",
       "Discuss your product": "Hablemos de tu producto",
-      "See how we can help": "Ver cómo podemos ayudar",
-      "Product direction": "Dirección de producto",
-      "Discovery, scope and priorities": "Discovery, alcance y prioridades",
-      "Experience design": "Diseño de experiencia",
+      "See how we can help": "Conoce cómo podemos ayudarte",
+      "Product direction": "Estrategia de producto",
+      "Discovery, scope and priorities": "Descubrimiento, alcance y prioridades",
+      "Experience design": "Experiencia de usuario",
       "Flows, UI and systems": "Flujos, interfaz y sistemas",
       "Software engineering": "Ingeniería de software",
       "Frontend, backend and APIs": "Frontend, backend y APIs",
-      "Platform foundations": "Bases de plataforma",
+      "Platform foundations": "Bases técnicas de plataforma",
       "Cloud, IaC and automation": "Cloud, IaC y automatización",
       "Product & Experience Lead": "Responsable de Producto y Experiencia",
-      "Shapes the right product, simplifies complex workflows and carries decisions from discovery into implementation-ready UX and frontend delivery.": "Da forma al producto adecuado, simplifica flujos complejos y lleva las decisiones desde el discovery hasta una UX lista para implementar y su entrega frontend.",
+      "Shapes the right product, simplifies complex workflows and carries decisions from discovery into implementation-ready UX and frontend delivery.": "Da forma al producto adecuado, simplifica flujos complejos y lleva las decisiones desde el descubrimiento hasta una UX lista para implementar y su desarrollo frontend.",
       "Product strategy": "Estrategia de producto",
-      "Engineering & Platform Lead": "Responsable de Ingeniería y Plataforma",
-      "Designs reliable systems and technical foundations across software architecture, backend services, cloud platforms, infrastructure and automation.": "Diseña sistemas fiables y bases técnicas mediante arquitectura de software, servicios backend, plataformas cloud, infraestructura y automatización.",
+      "Engineering & Platform Lead": "Responsable de Tecnología y Plataforma",
+      "Designs reliable systems and technical foundations across software architecture, backend services, cloud platforms, infrastructure and automation.": "Diseña sistemas fiables y bases técnicas sólidas mediante arquitectura de software, servicios backend, plataformas cloud, infraestructura y automatización.",
       "Architecture": "Arquitectura",
       "Cloud": "Cloud",
-      "Platform engineering": "Ingeniería de plataforma",
-      "Two senior specialists. One accountable product team.": "Dos especialistas sénior. Un único equipo responsable del producto.",
-      "Less context loss between strategy, design and engineering.": "Menos pérdida de contexto entre estrategia, diseño e ingeniería.",
-      "Best suited to products where complexity is real.": "Especialmente indicados para productos donde la complejidad es real.",
+      "Platform engineering": "Arquitectura de plataformas",
+      "Two senior specialists. One accountable product team.": "Dos especialistas sénior. Un único equipo responsable de producto.",
+      "Less context loss between strategy, design and engineering.": "Menos pérdida de contexto entre estrategia, diseño y tecnología.",
+      "Best suited to products where complexity is real.": "Para productos donde la complejidad es real.",
       "We focus on software with meaningful workflows, data, integrations, operational rules or legacy constraints—not generic marketing websites.": "Nos centramos en software con flujos relevantes, datos, integraciones, reglas operativas o restricciones legacy; no en webs de marketing genéricas.",
-      "Complex B2B products that need product and technical thinking together.": "Productos B2B complejos que necesitan pensamiento de producto y técnico conectado.",
+      "Complex B2B products that need product and technical thinking together.": "Productos B2B complejos donde producto y tecnología deben pensarse de forma conjunta.",
       "The strongest fit is where user experience, business logic, architecture and delivery cannot be treated as separate workstreams.": "Nuestro mejor encaje aparece cuando la experiencia de usuario, la lógica de negocio, la arquitectura y la entrega no pueden tratarse como líneas de trabajo separadas.",
-      "Fewer handoffs and clearer product–engineering trade-offs": "Menos traspasos y decisiones producto–ingeniería más claras",
+      "Fewer handoffs and clearer product–engineering trade-offs": "Menos traspasos y decisiones producto–tecnología más claras",
       "Buildable UX with states, edge cases and constraints considered": "UX construible que contempla estados, casos límite y restricciones",
       "Technical foundations designed to support future evolution": "Bases técnicas preparadas para evolucionar",
       "Data products & SaaS": "Productos de datos y SaaS",
       "Dashboards, datasets, analytics, maps, marketplaces, permissions and self-service workflows.": "Dashboards, datasets, analítica, mapas, marketplaces, permisos y flujos de autoservicio.",
       "Operational platforms": "Plataformas operativas",
-      "Internal products that replace fragmented processes, unclear interfaces and manual decisions.": "Productos internos que sustituyen procesos fragmentados, interfaces poco claras y decisiones manuales.",
+      "Internal products that replace fragmented processes, unclear interfaces and manual decisions.": "Productos internos que reemplazan procesos fragmentados, interfaces poco claras y decisiones manuales.",
       "Legacy modernisation": "Modernización de sistemas legacy",
       "Existing products that need better usability and stronger technical foundations without ignoring reality.": "Productos existentes que necesitan mejor usabilidad y bases técnicas más sólidas sin ignorar sus restricciones reales.",
-      "Validated products moving forward": "Productos validados que necesitan avanzar",
-      "From a proven concept or fragile MVP to a maintainable product foundation and clearer delivery path.": "De un concepto probado o un MVP frágil a una base de producto mantenible y una ruta de entrega más clara.",
-      "Ways to work together": "Formas de trabajar juntos",
+      "Validated products moving forward": "Productos validados que avanzan",
+      "From a proven concept or fragile MVP to a maintainable product foundation and clearer delivery path.": "De una idea validada o un MVP frágil a una base de producto sostenible y un camino de entrega más clara.",
+      "Ways to work together": "Formas de colaborar",
       "Definition Sprint": "Sprint de definición",
-      "Product Foundation": "Base de producto",
-      "Rescue & Modernisation": "Rescate y modernización",
+      "Product Foundation": "Producto listo para crecer",
+      "Rescue & Modernisation": "Recuperación y modernización",
       "01 · Product Definition Sprint": "01 · Sprint de definición de producto",
       "Problem framing": "Definición del problema",
       "Priority users": "Usuarios prioritarios",
@@ -82,7 +80,7 @@
       "What is difficult about your product today?": "¿Qué es difícil en tu producto ahora mismo?",
       "Share the current situation, the decision you need to make and where the team is blocked. We will start with the questions that matter most.": "Cuéntanos la situación actual, la decisión que necesitas tomar y dónde está bloqueado el equipo. Empezaremos por las preguntas que más importan.",
       "Email the studio": "Escribir al estudio",
-      "Product & Engineering Studio · Madrid, Spain": "Estudio de Producto e Ingeniería · Madrid, España",
+      "Product & Engineering Studio · Madrid, Spain": "Estudio de Producto y Tecnología · Madrid, España",
       "Contact": "Contacto",
       "Three focused product engagements.": "Tres propuestas para tres momentos del producto.",
       "Each engagement answers a different product moment: decide what is worth building, turn a validated direction into a dependable product, or improve a product that has become difficult to use and evolve.": "Cada una responde a una necesidad distinta: decidir qué merece la pena construir, convertir una dirección validada en un producto sólido o recuperar un producto que se ha vuelto difícil de usar y evolucionar.",
@@ -91,20 +89,14 @@
       "Make an existing product move again": "Volver a hacer avanzar el producto",
       "Collaboration format": "Formato de colaboración",
       "These are the problems we solve. The way we join can adapt.": "Estas son las necesidades que resolvemos. La forma de incorporarnos puede adaptarse.",
-      "We can deliver a focused project or work temporarily inside an existing team when a critical initiative needs extra senior product and engineering capacity. Advisory can support the work, but our default is hands-on contribution.": "Podemos asumir un proyecto acotado o integrarnos temporalmente en un equipo cuando una iniciativa crítica necesita capacidad sénior adicional de producto e ingeniería. El asesoramiento puede formar parte del trabajo, pero nuestra aportación habitual es práctica y orientada a la entrega.",
+      "We can deliver a focused project or work temporarily inside an existing team when a critical initiative needs extra senior product and engineering capacity. Advisory can support the work, but our default is hands-on contribution.": "Podemos asumir un proyecto acotado o integrarnos temporalmente en un equipo cuando una iniciativa crítica necesita capacidad sénior adicional de producto y tecnología. El asesoramiento puede formar parte del trabajo, pero nuestra aportación habitual es práctica y orientada a la entrega.",
       "Focused project": "Proyecto acotado",
       "Temporary team extension": "Refuerzo temporal del equipo",
       "Hands-on by default": "Implicación directa en la entrega",
       "One connected product team": "Un único equipo de producto conectado",
-      "Carolina & Carmelo — Product & Engineering Studio": "Carolina & Carmelo — Estudio de Producto e Ingeniería",
+      "Carolina & Carmelo — Product & Engineering Studio": "Carolina & Carmelo — Estudio de Producto e Tecnología",
       "Skip to content": "Saltar al contenido",
       "Carolina & Carmelo": "Carolina & Carmelo",
-      "English": "English",
-      "EN": "EN",
-      "ES": "ES",
-      "Español": "Español",
-      "PT": "PT",
-      "Português": "Português",
       "Carolina Vasconcelos": "Carolina Vasconcelos",
       "UX/UI": "UX/UI",
       "B2B SaaS": "B2B SaaS",
@@ -112,23 +104,23 @@
       "View full profile": "Ver perfil completo",
       "Carmelo Alcaraz Coy": "Carmelo Alcaraz Coy",
       "Backend": "Backend",
-      "Turn an ambiguous opportunity into a product direction your team can commit to.": "Convierte una oportunidad ambigua en una dirección de producto con la que tu equipo pueda comprometerse.",
-      "We connect the business problem, priority users, workflows and technical constraints before design and engineering effort becomes expensive.": "Conectamos el problema de negocio, los usuarios prioritarios, los flujos y las restricciones técnicas antes de que el esfuerzo de diseño e ingeniería resulte costoso.",
+      "Turn an ambiguous opportunity into a product direction your team can commit to.": "Convierte una oportunidad difusa en una dirección clara que tu equipo pueda asumir.",
+      "We connect the business problem, priority users, workflows and technical constraints before design and engineering effort becomes expensive.": "Conectamos el problema de negocio, los usuarios prioritarios, los flujos y las restricciones técnicas apuntando a un MVP antes de que el esfuerzo de diseño y tecnología resulte costoso.",
       "MVP scope": "Alcance del MVP",
       "Best when the opportunity is real, but the team is not yet aligned on what to build.": "Ideal cuando la oportunidad es real, pero el equipo todavía no está alineado sobre qué construir.",
       "Useful before an MVP, major feature, redesign or technical commitment.": "Útil antes de un MVP, una funcionalidad importante, un rediseño o un compromiso técnico.",
       "Carolina": "Carolina",
       "Carmelo": "Carmelo",
-      "02 · Product Foundation": "02 · Base de producto",
-      "Turn a validated direction into a product foundation ready for real use.": "Convierte una dirección validada en una base de producto lista para el uso real.",
+      "02 · Product Foundation": "02 · Producto listo para crecer",
+      "Turn a validated direction into a product foundation ready for real use.": "Convierte una idea validada en una base de producto escalable y lista para el uso real.",
       "We shape the experience and establish the frontend, backend, data and cloud foundations needed to launch, learn and continue building without starting over.": "Diseñamos la experiencia y establecemos las bases de frontend, backend, datos y cloud necesarias para lanzar, aprender y seguir construyendo sin empezar de cero.",
       "Design system": "Sistema de diseño",
       "Backend services": "Servicios backend",
       "APIs & data": "APIs y datos",
       "Cloud setup": "Configuración cloud",
-      "Best when the problem and initial scope are understood, but the product still needs to be designed and built as one coherent system.": "Ideal cuando el problema y el alcance inicial se entienden, pero el producto todavía debe diseñarse y construirse como un sistema coherente.",
+      "Best when the problem and initial scope are understood, but the product still needs to be designed and built as one coherent system.": "Ideal cuando el problema y el alcance inicial se entienden, pero el producto todavía debe diseñarse y construirse como un sistema sólido y escalable.",
       "Suitable for new B2B products, internal platforms and validated MVPs that need to mature.": "Adecuado para nuevos productos B2B, plataformas internas y MVPs validados que necesitan madurar.",
-      "03 · Product Rescue & Modernisation": "03 · Rescate y modernización de producto",
+      "03 · Product Rescue & Modernisation": "03 · Recuperación y modernización",
       "Make an existing product easier to use, change and operate.": "Haz que un producto existente sea más fácil de usar, modificar y operar.",
       "We identify where product complexity, UX debt and technical constraints are blocking progress, then define and deliver a realistic modernisation path.": "Identificamos dónde la complejidad de producto, la deuda UX y las restricciones técnicas bloquean el progreso; después definimos y ejecutamos una ruta de modernización realista.",
       "Product & UX audit": "Auditoría de producto y UX",
@@ -140,27 +132,27 @@
       "Best when the product works, but users struggle and every change takes the team longer than it should.": "Ideal cuando el producto funciona, pero los usuarios tienen dificultades y cada cambio lleva al equipo más tiempo del que debería.",
       "Suitable for legacy systems, growing SaaS products and operational tools.": "Adecuado para sistemas legacy, productos SaaS en crecimiento y herramientas operativas.",
       "Madrid · Product, UX and frontend": "Madrid · Producto, UX y frontend",
-      "Bridges product direction, complex UX and engineering execution.": "Conecta la dirección de producto, la UX compleja y la ejecución de ingeniería.",
-      "Carolina is a product-minded UX/UI and technical profile with experience across product ownership, complex B2B SaaS, operational products and frontend delivery.": "Carolina es un perfil técnico y de UX/UI con mentalidad de producto y experiencia en product ownership, SaaS B2B complejos, productos operativos y entrega frontend.",
-      "Her strongest contribution is turning ambiguous business priorities and user needs into focused scope, understandable journeys and buildable product increments. She can move from discovery and roadmap structure into information architecture, interaction models, user stories, acceptance criteria and release preparation without losing the reason the product is being built.": "Su principal aportación es convertir prioridades de negocio y necesidades de usuario ambiguas en un alcance enfocado, recorridos comprensibles e incrementos de producto construibles. Puede avanzar desde el discovery y la estructura del roadmap hasta la arquitectura de información, los modelos de interacción, las historias de usuario, los criterios de aceptación y la preparación de releases sin perder de vista por qué se está construyendo el producto.",
-      "Because she has led UX/UI and frontend modernisation in constraint-heavy environments, she designs with system states, edge cases, component logic, accessibility and implementation realities in view. This makes her especially valuable in products where dashboards, datasets, maps, filters, alerts and operational workflows must become clear without oversimplifying the system.": "Al haber liderado la modernización UX/UI y frontend en entornos con muchas restricciones, diseña considerando estados del sistema, casos límite, lógica de componentes, accesibilidad y realidad de implementación. Es especialmente valiosa en productos donde dashboards, datasets, mapas, filtros, alertas y flujos operativos deben volverse claros sin simplificar en exceso el sistema.",
+      "Bridges product direction, complex UX and engineering execution.": "Conecta la dirección de producto, la UX compleja y la implementación tecnológica.",
+      "Carolina is a product-minded UX/UI and technical profile with experience across product ownership, complex B2B SaaS, operational products and frontend delivery.": "Carolina es un perfil técnico y de UX/UI con mentalidad de producto. Además cuenta con experiencia en product ownership, SaaS B2B complejos, productos operativos y entrega frontend.",
+      "Her strongest contribution is turning ambiguous business priorities and user needs into focused scope, understandable journeys and buildable product increments. She can move from discovery and roadmap structure into information architecture, interaction models, user stories, acceptance criteria and release preparation without losing the reason the product is being built.": "Su principal aportación es convertir prioridades de negocio y necesidades de usuario ambiguas en un alcance acotado y enfocado, flujos de usuario comprensibles e incrementos de producto construibles. Puede atacar desde el descubrimiento y la estructura del roadmap hasta la arquitectura de información, los modelos de interacción, las historias de usuario, los criterios de aceptación y la preparación de releases sin perder de vista por qué se está construyendo el producto.",
+      "Because she has led UX/UI and frontend modernisation in constraint-heavy environments, she designs with system states, edge cases, component logic, accessibility and implementation realities in view. This makes her especially valuable in products where dashboards, datasets, maps, filters, alerts and operational workflows must become clear without oversimplifying the system.": "Su experiencia liderando la modernización de UX/UI y frontend en entornos exigentes le permite diseñar teniendo en cuenta los estados del sistema, los casos límite, la lógica de componentes, la accesibilidad y la realidad de la implementación. Es especialmente valiosa en productos donde dashboards, datasets, mapas, filtros, alertas y flujos operativos deben volverse claros sin simplificar en exceso el sistema.",
       "Where Carolina creates value": "Dónde aporta valor Carolina",
-      "Clarifies the problem, defines focused scope and connects roadmap priorities with user and business value.": "Aclara el problema, define un alcance enfocado y conecta las prioridades del roadmap con el valor para usuarios y negocio.",
+      "Clarifies the problem, defines focused scope and connects roadmap priorities with user and business value.": "Aporta claridad al problema, enfoca el alcance y conecta las prioridades del roadmap con el valor para usuarios y negocio.",
       "Complex experience design": "Diseño de experiencias complejas",
-      "Structures data-heavy and operational workflows into coherent journeys, states and reusable interaction patterns.": "Estructura flujos operativos e intensivos en datos como recorridos, estados y patrones de interacción coherentes y reutilizables.",
+      "Structures data-heavy and operational workflows into coherent journeys, states and reusable interaction patterns.": "Estructura flujos de trabajo operativos e intensivos en datos como journeys de usuario, estados y patrones de interacción coherentes y reutilizables.",
       "Design-to-delivery bridge": "Puente entre diseño y entrega",
       "Carries decisions into Figma, component logic, acceptance criteria, frontend plans, QA and release preparation.": "Lleva las decisiones a Figma, lógica de componentes, criterios de aceptación, planes frontend, QA y preparación de releases.",
       "Relevant experience": "Experiencia relevante",
       "Product Manager / Product Design Owner · Nommon": "Product Manager / Product Design Owner · Nommon",
-      "Owns discovery, roadmap structure, backlog quality and UX direction for a multi-product SaaS platform in mobility and data intelligence.": "Lidera el discovery, la estructura del roadmap, la calidad del backlog y la dirección UX de una plataforma SaaS multiproducto de movilidad e inteligencia de datos.",
+      "Owns discovery, roadmap structure, backlog quality and UX direction for a multi-product SaaS platform in mobility and data intelligence.": "Lidera el descubrimiento, la estructura del roadmap, la calidad del backlog y la dirección UX de una plataforma SaaS multiproducto de movilidad e inteligencia analítica de datos.",
       "Senior Frontend Developer & UX/UI Lead · Siemens Mobility": "Senior Frontend Developer & UX/UI Lead · Siemens Mobility",
       "Led the UX/UI and frontend modernisation of a legacy operational product, balancing usability with architecture, integrations and delivery risk.": "Lideró la modernización UX/UI y frontend de un producto operativo legacy, equilibrando usabilidad, arquitectura, integraciones y riesgo de entrega.",
       "UX Advisor · PsyPilot": "UX Advisor · PsyPilot",
       "Supports early product decisions, service flows and information architecture for psychologists, clinic teams and patients.": "Apoya decisiones iniciales de producto, flujos de servicio y arquitectura de información para psicólogos, equipos de clínica y pacientes.",
       "Core capabilities": "Capacidades principales",
-      "Product discovery": "Discovery de producto",
+      "Product discovery": "Descubrimiento de producto",
       "Roadmaps & backlog": "Roadmaps y backlog",
-      "UX/UI leadership": "Liderazgo UX/UI",
+      "UX/UI leadership": "Experiencia en liderazgo UX/UI",
       "Information architecture": "Arquitectura de información",
       "Design systems": "Sistemas de diseño",
       "Complex SaaS workflows": "Flujos SaaS complejos",
@@ -171,15 +163,15 @@
       "Portfolio": "Portfolio",
       "Email Carolina": "Escribir a Carolina",
       "Madrid · Software, cloud and platform": "Madrid · Software, cloud y plataforma",
-      "Turns product requirements into reliable systems and technical foundations.": "Convierte requisitos de producto en sistemas fiables y bases técnicas.",
-      "Carmelo is a software and platform engineer with a dual academic background in Computer Engineering and Mathematics, and a career spanning development, architecture, cloud and infrastructure.": "Carmelo es ingeniero de software y plataforma con una doble formación en Ingeniería Informática y Matemáticas y una trayectoria que abarca desarrollo, arquitectura, cloud e infraestructura.",
-      "His progression from software engineer to senior software engineer and platform engineer gives him a broad view of how applications are designed, operated and evolved. He can connect backend services, APIs, databases and web applications with the cloud and automation capabilities that development teams need to deliver consistently.": "Su evolución desde ingeniero de software hasta senior software engineer y platform engineer le aporta una visión amplia de cómo se diseñan, operan y evolucionan las aplicaciones. Puede conectar servicios backend, APIs, bases de datos y aplicaciones web con las capacidades cloud y de automatización que los equipos necesitan para entregar de forma consistente.",
+      "Turns product requirements into reliable systems and technical foundations.": "Convierte requisitos de producto en sistemas escalables y bases técnicas sólidas.",
+      "Carmelo is a software and platform engineer with a dual academic background in Computer Engineering and Mathematics, and a career spanning development, architecture, cloud and infrastructure.": "Carmelo es ingeniero de software y plataforma con un Doble Grado en Ingeniería Informática y Matemáticas y una trayectoria que abarca desarrollo, arquitectura, cloud e infraestructura.",
+      "His progression from software engineer to senior software engineer and platform engineer gives him a broad view of how applications are designed, operated and evolved. He can connect backend services, APIs, databases and web applications with the cloud and automation capabilities that development teams need to deliver consistently.": "Su evolución desde ingeniero de software hasta senior e ingeniero de plataforma le aporta una visión amplia de cómo se diseñan, operan y evolucionan las aplicaciones. Puede conectar servicios backend, APIs, bases de datos y aplicaciones web con las capacidades cloud y de automatización que los equipos necesitan para entregar de forma consistente.",
       "His mathematical foundation adds structured analytical thinking to architecture and engineering decisions. He is particularly useful where a product needs more than implementation: explicit technical trade-offs, maintainable system design, infrastructure as code, platform capabilities and a foundation that can support long-term change.": "Su base matemática añade pensamiento analítico estructurado a las decisiones de arquitectura e ingeniería. Resulta especialmente útil cuando un producto necesita más que implementación: trade-offs técnicos explícitos, diseño de sistemas mantenible, infraestructura como código, capacidades de plataforma y una base preparada para el cambio a largo plazo.",
       "Where Carmelo creates value": "Dónde aporta valor Carmelo",
       "System architecture": "Arquitectura de sistemas",
       "Designs software structures, services, APIs and data foundations around product needs and technical constraints.": "Diseña estructuras de software, servicios, APIs y bases de datos a partir de las necesidades de producto y las restricciones técnicas.",
       "Cloud & platform engineering": "Cloud e ingeniería de plataforma",
-      "Connects AWS, Azure, Docker and cloud operations with the capabilities teams need to build and run software.": "Conecta AWS, Azure, Docker y operaciones cloud con las capacidades que los equipos necesitan para construir y operar software.",
+      "With capabilities and experience across the three major cloud providers, teams can build, deploy, and run software effectively.": "Conecta AWS, Azure, Docker y operaciones cloud con las capacidades que los equipos necesitan para construir y operar software.",
       "Automation & reliability": "Automatización y fiabilidad",
       "Uses Terraform, Ansible and Infrastructure as Code to reduce manual work and create repeatable technical foundations.": "Utiliza Terraform, Ansible e infraestructura como código para reducir trabajo manual y crear bases técnicas repetibles.",
       "Platform Engineer · Nommon": "Platform Engineer · Nommon",
@@ -192,8 +184,6 @@
       "Combines software engineering with optimisation, statistics, numerical methods, modelling and analytical problem solving.": "Combina ingeniería de software con optimización, estadística, métodos numéricos, modelización y resolución analítica de problemas.",
       "Software architecture": "Arquitectura de software",
       "Python": "Python",
-      "Java": "Java",
-      "C/C++": "C/C++",
       "REST & GraphQL": "REST & GraphQL",
       "SQL & NoSQL": "SQL & NoSQL",
       "AWS & Azure": "AWS & Azure",
@@ -202,61 +192,11 @@
       "Docker": "Docker",
       "Email Carmelo": "Escribir a Carmelo"
     },
-    "serviceContent": {
-      "definition": {
-        "kicker": "01 · Sprint de definición de producto",
-        "title": "Convertimos una oportunidad todavía difusa en una dirección de producto que el equipo puede defender y ejecutar.",
-        "description": "Alineamos el problema de negocio, los usuarios prioritarios, los flujos y las restricciones técnicas antes de invertir de verdad en diseño y desarrollo.",
-        "deliverables": [
-          "Definición del problema",
-          "Usuarios prioritarios",
-          "Flujos principales",
-          "Prototipo",
-          "Alcance del MVP",
-          "Esquema de arquitectura"
-        ],
-        "icon": "travel_explore",
-        "best": "Encaja cuando la oportunidad existe, pero todavía no hay suficiente acuerdo sobre qué construir.",
-        "note": "Útil antes de un MVP, una funcionalidad estratégica, un rediseño o una decisión técnica difícil de revertir."
-      },
-      "foundation": {
-        "kicker": "02 · Base de producto",
-        "title": "Convertimos una dirección validada en una base de producto preparada para uso real.",
-        "description": "Diseñamos la experiencia y dejamos asentadas las bases de frontend, backend, datos y cloud para lanzar, aprender y seguir evolucionando sin empezar de nuevo.",
-        "deliverables": [
-          "UX/UI",
-          "Sistema de diseño",
-          "Frontend",
-          "Servicios backend",
-          "APIs y datos",
-          "Infraestructura cloud"
-        ],
-        "icon": "foundation",
-        "best": "Encaja cuando el problema y el alcance inicial ya se entienden, pero todavía falta construir el producto como un sistema coherente.",
-        "note": "Pensado para nuevos productos B2B, plataformas internas y MVPs validados que necesitan madurar."
-      },
-      "rescue": {
-        "kicker": "03 · Rescate y modernización de producto",
-        "title": "Hacemos que un producto existente vuelva a ser fácil de usar, cambiar y operar.",
-        "description": "Detectamos dónde la complejidad de producto, la deuda UX y las restricciones técnicas están frenando al equipo, y trazamos una modernización realista.",
-        "deliverables": [
-          "Auditoría de producto y UX",
-          "Evaluación técnica",
-          "Mapa de prioridades",
-          "Rediseño de flujos",
-          "Plan de modernización",
-          "Arquitectura objetivo"
-        ],
-        "icon": "sync_alt",
-        "best": "Encaja cuando el producto funciona, pero los usuarios sufren y cada cambio cuesta más de lo razonable.",
-        "note": "Especialmente útil en sistemas legacy, SaaS en crecimiento y herramientas operativas."
-      }
-    },
     "metaContent": {
-      "title": "Carolina & Carmelo — Estudio de Producto e Ingeniería",
-      "description": "Carolina Vasconcelos y Carmelo Alcaraz: un dúo sénior de producto e ingeniería para software B2B complejo, productos de datos y plataformas operativas.",
-      "og": "Claridad de producto. Profundidad de ingeniería. Un único equipo sénior.",
-      "subject": "Proyecto de producto e ingeniería"
+      "title": "Carolina & Carmelo — Estudio de Producto y Tecnología",
+      "description": "Carolina Vasconcelos y Carmelo Alcaraz: un dúo sénior de producto e tecnología para software B2B complejo, productos de datos y plataformas operativas.",
+      "og": "Producto claro. Tecnología sólida. Un único equipo sénior.",
+      "subject": "Proyecto de producto e tecnología"
     },
     "attributeTranslations": {
       "Main navigation": "Navegación principal",
@@ -279,143 +219,6 @@
     "menuLabels": {
       "open": "Abrir navegación",
       "close": "Cerrar navegación"
-    },
-    "profileContent": {
-      "carolina": {
-        "name": "Carolina Vasconcelos",
-        "role": "Responsable de Producto y Experiencia",
-        "location": "Madrid · Producto, UX y frontend",
-        "headline": "Conecta la dirección de producto, la UX compleja y la ejecución técnica.",
-        "intro": "Carolina es un perfil técnico y de UX/UI con mentalidad de producto y experiencia en product ownership, SaaS B2B complejo, productos operativos y entrega frontend.",
-        "paragraphs": [
-          "Su principal aportación es convertir prioridades de negocio y necesidades de usuario ambiguas en un alcance enfocado, recorridos comprensibles e incrementos de producto construibles. Puede avanzar desde el discovery y la estructura del roadmap hasta la arquitectura de información, los modelos de interacción, las historias de usuario, los criterios de aceptación y la preparación de releases sin perder de vista por qué se está construyendo el producto.",
-          "Al haber liderado la modernización UX/UI y frontend de productos con muchas restricciones, diseña considerando estados del sistema, casos límite, lógica de componentes, accesibilidad y realidad de implementación. Es especialmente valiosa en productos donde dashboards, datasets, mapas, filtros, alertas y flujos operativos deben volverse claros sin simplificar en exceso el sistema."
-        ],
-        "value_title": "Dónde aporta valor Carolina",
-        "values": [
-          {
-            "icon": "explore",
-            "title": "Dirección de producto",
-            "copy": "Aclara el problema, define un alcance enfocado y conecta las prioridades del roadmap con el valor para usuarios y negocio."
-          },
-          {
-            "icon": "account_tree",
-            "title": "Diseño de experiencias complejas",
-            "copy": "Estructura flujos operativos e intensivos en datos como recorridos, estados y patrones de interacción coherentes."
-          },
-          {
-            "icon": "design_services",
-            "title": "Puente entre diseño y entrega",
-            "copy": "Lleva las decisiones a Figma, lógica de componentes, criterios de aceptación, planes frontend, QA y preparación de releases."
-          }
-        ],
-        "evidence_title": "Experiencia relevante",
-        "evidence": [
-          {
-            "title": "Product Manager / Product Design Owner · Nommon",
-            "copy": "Lidera discovery, estructura de roadmap, calidad del backlog y dirección UX para una plataforma SaaS multiproducto de movilidad e inteligencia de datos."
-          },
-          {
-            "title": "Senior Frontend Developer & UX/UI Lead · Siemens Mobility",
-            "copy": "Lideró la modernización UX/UI y frontend de un producto operativo legacy, equilibrando usabilidad, arquitectura, integraciones y riesgo de entrega."
-          },
-          {
-            "title": "UX Advisor · PsyPilot",
-            "copy": "Apoya decisiones iniciales de producto, flujos de servicio y arquitectura de información para psicólogos, clínicas y pacientes."
-          }
-        ],
-        "capabilities_title": "Capacidades principales",
-        "capabilities": [
-          "Discovery de producto",
-          "Roadmaps y backlog",
-          "Liderazgo UX/UI",
-          "Arquitectura de información",
-          "Sistemas de diseño",
-          "Flujos SaaS complejos",
-          "Entrega frontend",
-          "Criterios de aceptación",
-          "Alineación de stakeholders"
-        ],
-        "links": {
-          "linkedin": "LinkedIn",
-          "portfolio": "Portfolio",
-          "email": "Escribir a Carolina"
-        },
-        "close": "Cerrar perfil"
-      },
-      "carmelo": {
-        "name": "Carmelo Alcaraz Coy",
-        "role": "Responsable de Ingeniería y Plataforma",
-        "location": "Madrid · Software, cloud y plataforma",
-        "headline": "Convierte requisitos de producto en sistemas fiables y bases técnicas.",
-        "intro": "Carmelo es ingeniero de software y plataforma con una doble formación en Ingeniería Informática y Matemáticas y una trayectoria que abarca desarrollo, arquitectura, cloud e infraestructura.",
-        "paragraphs": [
-          "Su evolución desde ingeniero de software hasta senior software engineer y platform engineer le aporta una visión amplia de cómo se diseñan, operan y evolucionan las aplicaciones. Puede conectar servicios backend, APIs, bases de datos y aplicaciones web con las capacidades cloud y de automatización que los equipos necesitan para entregar de forma consistente.",
-          "Su base matemática añade pensamiento analítico estructurado a las decisiones de arquitectura e ingeniería. Resulta especialmente útil cuando un producto necesita más que implementación: trade-offs técnicos explícitos, diseño mantenible, infraestructura como código, capacidades de plataforma y una base preparada para el cambio a largo plazo."
-        ],
-        "value_title": "Dónde aporta valor Carmelo",
-        "values": [
-          {
-            "icon": "schema",
-            "title": "Arquitectura de sistemas",
-            "copy": "Diseña estructuras de software, servicios, APIs y bases de datos a partir de las necesidades de producto y las restricciones técnicas."
-          },
-          {
-            "icon": "cloud_sync",
-            "title": "Cloud e ingeniería de plataforma",
-            "copy": "Conecta AWS, Azure, Docker y operaciones cloud con las capacidades que los equipos necesitan para construir y operar software."
-          },
-          {
-            "icon": "automation",
-            "title": "Automatización y fiabilidad",
-            "copy": "Utiliza Terraform, Ansible e infraestructura como código para reducir trabajo manual y crear bases técnicas repetibles."
-          }
-        ],
-        "evidence_title": "Experiencia relevante",
-        "evidence": [
-          {
-            "title": "Platform Engineer · Nommon",
-            "copy": "Diseña y opera plataformas cloud, automatización de infraestructura y soluciones internas que apoyan a los equipos de software."
-          },
-          {
-            "title": "Senior Software Engineer · Nommon",
-            "copy": "Trabajó en arquitectura de software, diseño de sistemas, aplicaciones web, visualización de datos y liderazgo técnico dentro de equipos de proyecto."
-          },
-          {
-            "title": "Software Engineer · Capgemini",
-            "copy": "Desarrolló y mantuvo software empresarial con metodologías establecidas y experiencia en Java y C/C++."
-          },
-          {
-            "title": "Ingeniería Informática + Matemáticas",
-            "copy": "Combina ingeniería de software con optimización, estadística, métodos numéricos, modelización y resolución analítica de problemas."
-          }
-        ],
-        "capabilities_title": "Capacidades principales",
-        "capabilities": [
-          "Arquitectura de software",
-          "Python",
-          "Java",
-          "C/C++",
-          "REST y GraphQL",
-          "SQL y NoSQL",
-          "AWS y Azure",
-          "Terraform",
-          "Ansible",
-          "Docker",
-          "Ingeniería de plataforma"
-        ],
-        "links": {
-          "linkedin": "LinkedIn",
-          "portfolio": "Portfolio",
-          "email": "Escribir a Carmelo"
-        },
-        "close": "Cerrar perfil"
-      }
-    },
-    "profileUi": {
-      "open": "Ver perfil completo",
-      "carolina_aria": "Abrir el perfil completo de Carolina Vasconcelos",
-      "carmelo_aria": "Abrir el perfil completo de Carmelo Alcaraz Coy"
     }
   },
   "caseStudy": {
@@ -561,7 +364,7 @@
       "visualRules": "Decisiones visuales",
       "visualTitle": "El sistema visual debía defender el mismo argumento que el contenido.",
       "vp1a": "El alcance no está claro",
-      "vp1b": "Discovery, framing y priorización",
+      "vp1b": "Descubrimiento, framing y priorización",
       "vp2a": "El flujo es difícil",
       "vp2b": "Arquitectura de información y UX",
       "vp3a": "El diseño está desconectado del desarrollo",

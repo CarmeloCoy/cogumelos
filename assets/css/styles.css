@@ -780,6 +780,12 @@ button {
   display: flex;
   flex-direction: column;
 }
+.detail-container {
+  display: contents;
+}
+.detail-container[hidden] {
+  display: none !important;
+}
 .detail-kicker {
   margin: 0 0 12px;
   color: var(--secondary);
@@ -2481,7 +2487,7 @@ footer {
 
 /* ---------- Global rhythm ---------- */
 .container {
-  width: min(1280px, calc(100% - 48px));
+  width: min(1320px, calc(100% - 48px));
 }
 .section {
   padding: 96px 0;

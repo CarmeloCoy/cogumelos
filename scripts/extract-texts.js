@@ -17,7 +17,9 @@ function decodeHtml(value) {
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)));
+    .replace(/&#x([\da-f]+);/gi, (_, code) =>
+      String.fromCodePoint(Number.parseInt(code, 16)),
+    );
 }
 
 function normalise(value) {
@@ -32,11 +34,11 @@ function removeIgnoredElements(html) {
   const ignoredAttribute = "\\bdata-i18n-ignore(?:\\s|=|>|/)";
   const ignoredElement = new RegExp(
     `<([\\w:-]+)\\b(?=[^>]*${ignoredAttribute})[^>]*>[\\s\\S]*?<\\/\\1\\s*>`,
-    "gi"
+    "gi",
   );
   const ignoredVoidElement = new RegExp(
     `<[\\w:-]+\\b(?=[^>]*${ignoredAttribute})[^>]*\\/\\s*>`,
-    "gi"
+    "gi",
   );
 
   return html.replace(ignoredElement, "").replace(ignoredVoidElement, "");
@@ -52,7 +54,7 @@ function extractText(html) {
   let match;
 
   while ((match = textNodes.exec(content))) strings.push(normalise(match[1]));
-  return unique(strings.filter(value => !value.includes("{{")));
+  return unique(strings.filter((value) => !value.includes("{{")));
 }
 
 function extractAttributes(html, attribute) {
@@ -60,13 +62,15 @@ function extractAttributes(html, attribute) {
   const pattern = new RegExp(`\\b${attribute}=(['"])(.*?)\\1`, "gi");
   let match;
 
-  while ((match = pattern.exec(removeIgnoredElements(html)))) values.push(normalise(match[2]));
+  while ((match = pattern.exec(removeIgnoredElements(html))))
+    values.push(normalise(match[2]));
   return unique(values);
 }
 
 function extractKeyedText(html) {
   const values = {};
-  const pattern = /<([\w:-]+)\b([^>]*)\bdata-i18n=(['"])([^'"]+)\3[^>]*>([\s\S]*?)<\/\1\s*>/gi;
+  const pattern =
+    /<([\w:-]+)\b([^>]*)\bdata-i18n=(['"])([^'"]+)\3[^>]*>([\s\S]*?)<\/\1\s*>/gi;
   let match;
 
   while ((match = pattern.exec(removeIgnoredElements(html)))) {
@@ -79,10 +83,14 @@ function extractKeyedText(html) {
 function extractKeyedAttributes(html, attribute) {
   const values = {};
   const attributeName = attribute === "aria" ? "aria-label" : attribute;
-  const pattern = new RegExp(`<[\\w:-]+\\b(?=[^>]*\\bdata-i18n-${attribute}=(['"])([^'"]+)\\1)(?=[^>]*\\b${attributeName}=(['"])(.*?)\\3)[^>]*>`, "gi");
+  const pattern = new RegExp(
+    `<[\\w:-]+\\b(?=[^>]*\\bdata-i18n-${attribute}=(['"])([^'"]+)\\1)(?=[^>]*\\b${attributeName}=(['"])(.*?)\\3)[^>]*>`,
+    "gi",
+  );
   let match;
 
-  while ((match = pattern.exec(removeIgnoredElements(html)))) values[match[2]] = normalise(match[4]);
+  while ((match = pattern.exec(removeIgnoredElements(html))))
+    values[match[2]] = normalise(match[4]);
   return values;
 }
 
@@ -100,35 +108,43 @@ function writeJson(file, value) {
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-const files = fs.readdirSync(templateDirectory)
-  .filter(file => file.endsWith(".html"))
+const files = fs
+  .readdirSync(templateDirectory)
+  .filter((file) => file.endsWith(".html"))
   .sort();
-const inventory = Object.fromEntries(files.map(file => {
-  const html = fs.readFileSync(path.join(templateDirectory, file), "utf8");
-  return [file, {
-    text: extractText(html),
-    attributes: {
-      alt: extractAttributes(html, "alt"),
-      "aria-label": extractAttributes(html, "aria-label"),
-      title: extractAttributes(html, "title")
-    }
-  }];
-}));
+const inventory = Object.fromEntries(
+  files.map((file) => {
+    const html = fs.readFileSync(path.join(templateDirectory, file), "utf8");
+    return [
+      file,
+      {
+        text: extractText(html),
+        attributes: {
+          alt: extractAttributes(html, "alt"),
+          "aria-label": extractAttributes(html, "aria-label"),
+          title: extractAttributes(html, "title"),
+        },
+      },
+    ];
+  }),
+);
 
 fs.writeFileSync(output, `${JSON.stringify(inventory, null, 2)}\n`);
 
 const home = inventory["index.html"];
 const caseStudy = inventory["how-we-work.html"];
-const homeText = Object.fromEntries(home.text.map(value => [value, value]));
+const homeText = Object.fromEntries(home.text.map((value) => [value, value]));
 const homeAttributes = Object.fromEntries(
-  ["alt", "aria-label", "title"].flatMap(attribute =>
-    home.attributes[attribute].map(value => [value, value])
-  )
+  ["alt", "aria-label", "title"].flatMap((attribute) =>
+    home.attributes[attribute].map((value) => [value, value]),
+  ),
 );
-const caseStudyText = extractKeyedText(fs.readFileSync(path.join(root, "how-we-work.html"), "utf8"));
+const caseStudyText = extractKeyedText(
+  fs.readFileSync(path.join(root, "how-we-work.html"), "utf8"),
+);
 const caseStudyAria = extractKeyedAttributes(
   fs.readFileSync(path.join(root, "how-we-work.html"), "utf8"),
-  "aria"
+  "aria",
 );
 
 for (const language of languages) {
@@ -142,4 +158,6 @@ for (const language of languages) {
   writeJson(localeFile, locale);
 }
 
-console.log(`Extracted source text to ${path.relative(root, output)} and synchronized locale files`);
+console.log(
+  `Extracted source text to ${path.relative(root, output)} and synchronized locale files`,
+);

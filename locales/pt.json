@@ -190,7 +190,8 @@
       "Ansible": "Ansible",
       "Docker": "Docker",
       "Email Carmelo": "Enviar email ao Carmelo",
-      "With capabilities and experience across the three major cloud providers, teams can build, deploy, and run software effectively.": "Com capacidades e experiência através dos três principais provedores de cloud, as equipas podem construir, implementar e executar software de forma eficaz."
+      "With capabilities and experience across the three major cloud providers, teams can build, deploy, and run software effectively.": "Com capacidades e experiência através dos três principais provedores de cloud, as equipas podem construir, implementar e executar software de forma eficaz.",
+      "Our work in practice": "O nosso trabalho na prática"
     },
     "metaContent": {
       "title": "Carolina & Carmelo — Estúdio de Produto e Engenharia",
@@ -269,7 +270,6 @@
       "heroLede": "O website era apenas o resultado visível. O trabalho real consistia em transformar dois perfis sénior complementares numa proposta que o mercado pudesse compreender, confiar e contratar.",
       "heroLine1": "Tratámos o nosso estúdio",
       "heroLine2": "como um produto.",
-      "home": "Início",
       "howWeWork": "Como trabalhamos",
       "initialRequest": "O que inicialmente pensávamos precisar",
       "initialRequestNote": "Um lugar para mostrar dois perfis, listar competências e disponibilizar contactos.",

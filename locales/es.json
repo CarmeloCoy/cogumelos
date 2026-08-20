@@ -190,7 +190,8 @@
       "Terraform": "Terraform",
       "Ansible": "Ansible",
       "Docker": "Docker",
-      "Email Carmelo": "Escribir a Carmelo"
+      "Email Carmelo": "Escribir a Carmelo",
+      "Our work in practice": "Ver caso práctico"
     },
     "metaContent": {
       "title": "Carolina & Carmelo — Estudio de Producto y Tecnología",
@@ -269,7 +270,6 @@
       "heroLede": "La web era solo el resultado visible. El trabajo real consistía en convertir dos perfiles sénior complementarios en una propuesta que el mercado pudiera entender, confiar y contratar.",
       "heroLine1": "Tratamos nuestro estudio",
       "heroLine2": "como un producto.",
-      "home": "Inicio",
       "howWeWork": "Cómo trabajamos",
       "initialRequest": "Lo que inicialmente pensábamos que necesitábamos",
       "initialRequestNote": "Un lugar para mostrar dos perfiles, enumerar habilidades y ofrecer datos de contacto.",

@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const languageNames = { en: "English", es: "Español", pt: "Português" };
+  const languageNames = { en: "EN", es: "ES", pt: "PT" };
 
   const readStorage = (key) => {
     try {

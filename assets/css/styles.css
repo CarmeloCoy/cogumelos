@@ -3331,7 +3331,7 @@ html[data-theme="dark"] {
   flex: 0 0 auto;
 }
 .language-trigger {
-  min-width: 132px;
+  min-width: 90px;
   min-height: 42px;
   display: grid;
   grid-template-columns: 20px 1fr 16px;

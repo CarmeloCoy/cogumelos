@@ -25,7 +25,7 @@
   const languageOptionButtons = [
     ...document.querySelectorAll(".language-option"),
   ];
-  const languageNames = { en: "English", es: "Español", pt: "Português" };
+  const languageNames = { en: "EN", es: "ES", pt: "PT" };
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
   const topBar = document.querySelector(".top-app-bar");
